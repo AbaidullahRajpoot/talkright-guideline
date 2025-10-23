@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}> 
-        <Header />
+        <Header /> 
         <div className="loader-mask">
           <div className="loader">
             <div className="dot-spinner">
