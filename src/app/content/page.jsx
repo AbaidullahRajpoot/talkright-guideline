@@ -174,6 +174,13 @@ const page = () => {
                       “Hi, User”).
                     </li>
                     <li>
+                      <strong>Global Time Zone</strong> displays the current
+                      date and time according to the time zone you selected
+                      during account setup (e.g., "Asia/Karachi"). This ensures
+                      all timestamps for appointments and reports are
+                      standardized to your local time.
+                    </li>
+                    <li>
                       Includes a date filter to review Call Activity, Total
                       Appointments, Survey Overview, and Reports within selected
                       ranges (Last 7 Days, Last 15 Days, Last 30 Days, or a

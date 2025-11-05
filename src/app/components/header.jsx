@@ -4,6 +4,14 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 
 const Header = () => {
+  const [theme, setTheme] = React.useState(null);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("selected-theme") || "light";
+    document.documentElement.setAttribute("data-theme", savedTheme);
+    setTheme(savedTheme); // ✅ ensures correct logo on refresh
+  }, []);
+
   useEffect(() => {
     const searchInput = document.getElementById("globalSearch");
     if (!searchInput) return;
@@ -72,6 +80,7 @@ const Header = () => {
 
     // 🔹 Apply saved theme on mount
     document.documentElement.setAttribute("data-theme", selectedTheme);
+
     if (selectedIcon === "ri-moon-clear-fill") {
       themeButton?.classList.add(iconTheme);
     }
@@ -82,6 +91,8 @@ const Header = () => {
         document.documentElement.getAttribute("data-theme") === "dark"
           ? "light"
           : "dark";
+
+      setTheme(currentTheme); // ✅ only set current theme here
 
       document.documentElement.setAttribute("data-theme", currentTheme);
       themeButton?.classList.toggle(iconTheme);
@@ -101,6 +112,7 @@ const Header = () => {
     // 🔹 Cleanup on unmount
     return () => themeButton?.removeEventListener("click", handleThemeToggle);
   }, []);
+
   return (
     <div className="header " id="header">
       <div className="container-fluid">
@@ -108,17 +120,14 @@ const Header = () => {
           <div className="hedaer-left">
             <Link href="/" className="logo-header">
               <img
-                src="/assets/image/header/logo-darkmode.png"
+                src={
+                  theme === "dark"
+                    ? "/assets/image/header/logo-darkmode.png"
+                    : "/assets/image/header/logo.png"
+                }
                 alt="Logo"
                 style={{ height: "70px", width: "100%" }}
-                className="mb-3 ms-2 logo  logo-dark"
-              />
-
-              <img
-                src="/assets/image/header/logo.png"
-                alt="Logo"
-                style={{ height: "70px", width: "100%" }}
-                className="mb-3 ms-2  logo logo-light "
+                className="mb-3 ms-2 logo"
               />
             </Link>
             <div className="form-doct">

@@ -133,7 +133,7 @@ document.addEventListener("click", (e) => {
       .forEach((el) => el.remove());
     document
       .querySelectorAll(".gx-full-card")
-      .forEach((el) => (el.style.display = "inline-block"));
+      .forEach((el) => (el.style.display = ""));
     document.querySelectorAll(".gx-card").forEach((card) => {
       const wrapper = card.parentElement;
       wrapper.classList.remove("active");

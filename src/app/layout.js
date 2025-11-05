@@ -26,6 +26,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  const theme = localStorage.getItem('selected-theme') || 'light';
+                  document.documentElement.setAttribute('data-theme', theme);
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&display=swap"
           rel="stylesheet"
@@ -35,10 +47,10 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}> 
-        <Header /> 
-        <div className="loader-mask"> 
-          <div className="loader"> 
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Header />
+        <div className="loader-mask">
+          <div className="loader">
             <div className="dot-spinner">
               <div className="dot-spinner__dot"></div>
               <div className="dot-spinner__dot"></div>
