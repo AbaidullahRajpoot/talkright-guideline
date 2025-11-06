@@ -37,7 +37,10 @@ export default function Home() {
                     <strong>TalkRight</strong> is an AI-powered web application
                     designed to make hospital appointments simple and
                     stress-free. With TalkRight, patients can easily book their
-                    appointments through <strong>AI-assisted calling</strong>,
+                    appointments through{" "}
+                    <strong>
+                      AI-assisted calling or directly via WhatsApp,
+                    </strong>{" "}
                     while hospital staff can also manage manual bookings
                     according to available doctors. This app is built to
                     simplify hospital administration by managing appointments
@@ -45,12 +48,13 @@ export default function Home() {
                     hospital staff.
                   </p>
                   <p className="popins-data-helpex">
-                    Patients can call or request an appointment, and the AI will
-                    verify the doctor’s availability for the requested slot. In
-                    case of unavailability, it will automatically suggest the
-                    nearest available timing. Similarly, hospital staff can
-                    manually check doctor schedules, departments, and shift
-                    timings when booking on-site.
+                    Patients can call or request an appointment through
+                    WhatsApp, and the AI will verify the doctor’s availability
+                    for the requested slot using the configured clinic WhatsApp
+                    number. In case of unavailability, it will automatically
+                    suggest the nearest available timing. Similarly, hospital
+                    staff can manually check doctor schedules, departments, and
+                    shift timings when booking on-site.
                   </p>
 
                   <p className="popins-data-helpex">
@@ -77,19 +81,16 @@ export default function Home() {
                       satisfaction and improve service quality.
                     </li>
                     <li className="popins-data-helpex">
-                      The same templates are also used for
-                      <strong>automated reminder messages</strong>, powered by{" "}
-                      <strong>cron jobs</strong>, which notify patients about
-                      their upcoming appointments.
+                      The same templates are also used for automated reminder
+                      messages, powered by cron jobs, which notify patients
+                      about their upcoming appointments.
                     </li>
                     <li className="popins-data-helpex">
-                      Through <strong>WhatsApp configuration</strong>, clinics
-                      can also enable patients to{" "}
-                      <strong>
-                        book, confirm, or manage appointments directly via
-                        WhatsApp
-                      </strong>
-                      , enhancing overall accessibility.
+                      <strong>Through WhatsApp configuration,</strong> clinics
+                      enable patients to book, confirm, reschedule, or cancel
+                      appointments directly via WhatsApp. The AI fully manages
+                      these interactions using the configured clinic WhatsApp
+                      number, ensuring seamless, automated appointment handling.
                     </li>
                   </ul>
 
@@ -612,10 +613,34 @@ export default function Home() {
                               Phone Number” if it's the same as your personal
                               number.
                             </li>
+
+                            <li>
+                              <i className="ri-information-line"></i>Select your
+                              Timezone from the dropdown. This is a one-time,
+                              irreversible selection that sets the rigid
+                              timezone for the entire platform (all schedules,
+                              reports, reminders, and cron jobs will follow this
+                              timezone).
+                            </li>
+
+                            <li>
+                              <i className="ri-information-line"></i>Check the
+                              box to agree to the privacy policy and terms.
+                            </li>
+
+                            <li>
+                              <i className="ri-information-line"></i>Click "Sign
+                              Up" to complete the registration.
+                            </li>
+
+                            <li>
+                              <i className="ri-information-line"></i>If you
+                              already have an account, click "Sign in instead."
+                            </li>
                           </ul>
                         </li>
 
-                        <li>
+                        {/* <li>
                           <a
                             href="javascript:void(0)"
                             className="gx-struct-drop-under d-flex align-items-end"
@@ -658,7 +683,7 @@ export default function Home() {
                               already have an account, click "Sign in instead."
                             </li>
                           </ul>
-                        </li>
+                        </li> */}
                       </ul>
                     </li>
                   </ul>

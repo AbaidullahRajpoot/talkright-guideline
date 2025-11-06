@@ -174,18 +174,20 @@ const page = () => {
                       “Hi, User”).
                     </li>
                     <li>
-                      <strong>Global Time Zone</strong> displays the current
+                      <strong>Platform Time Zone</strong> displays the current
                       date and time according to the time zone you selected
-                      during account setup (e.g., "Asia/Karachi"). This ensures
+                      during account setup (e.g., "Asia/Dubai"). This ensures
                       all timestamps for appointments and reports are
-                      standardized to your local time.
+                      standardized to your selected time zone.
                     </li>
                     <li>
                       Includes a date filter to review Call Activity, Total
-                      Appointments, Survey Overview, and Reports within selected
-                      ranges (Last 7 Days, Last 15 Days, Last 30 Days, or a
-                      Custom Range).
+                      Appointments, and Survey Overview within selected ranges
+                      (Last 7 Days, Last 15 Days, Last 30 Days, or a Custom
+                      Range). <br /> The default time filter is set to Last 7
+                      days.
                     </li>
+
                     <li>
                       Shows the <strong>total number of calls made</strong> for
                       quick performance insight.
@@ -200,9 +202,15 @@ const page = () => {
                     </li>
 
                     <li>
-                      Presents <strong>remaining minutes</strong> with a visual
-                      circular progress bar for easy tracking of your available
-                      balance.
+                      Displays remaining AI call minutes via a circular progress
+                      bar for intuitive tracking of your available balance. The
+                      green segment represents remaining minutes, while the red
+                      segment indicates used minutes. Total minutes are
+                      prominently shown in the center. On hover, exact remaining
+                      and used values appear in numbers for precise insight.
+                      Additionally, remaining minutes are displayed separately
+                      in percentage (e.g., 78% remaining) outside the circular
+                      visual for quick reference.
                     </li>
 
                     <li>
@@ -243,8 +251,22 @@ const page = () => {
                     </li>
                     <li>
                       Displays a visual graph with color-coded segments for each
-                      department, making it easy to identify which departments
-                      have the most appointments at a glance.
+                      department.
+                      <ul className="lists">
+                        <li>
+                          <strong>Top 5 departments</strong> with the greatest
+                          number of appointments are shown{" "}
+                          <strong>individually</strong> based on the selected
+                          filter.
+                        </li>
+                        <li>
+                          <strong>Default filter:</strong> Last 7 days.
+                        </li>
+                        <li>
+                          All other departments are grouped under{" "}
+                          <strong>"Others"</strong> for a clean, focused view.
+                        </li>
+                      </ul>
                     </li>
                   </ul>
 
@@ -1065,9 +1087,11 @@ const page = () => {
                         appointments in a single interface.
                       </li>
                       <li>
-                        <strong>Patient Information:</strong> Includes{" "}
-                        <strong>Name, Email, and Phone Number</strong>
-                        for easy identification and communication.
+                        <strong>Patient Information:</strong> Includes Name,
+                        Email, and Phone Number for easy identification and
+                        communication. Clicking the phone number instantly
+                        displays all relevant reservations linked to that
+                        patient (past, present, and upcoming).
                       </li>
                       <li>
                         <strong>Appointment Timing:</strong> Displays both the{" "}
@@ -1138,7 +1162,7 @@ const page = () => {
                           <strong>How to Use:</strong>
                         </p>
                         <ul className="lists steps">
-                          <li data-target="11" className="cursor-pointer">
+                          <li data-target="12" className="cursor-pointer">
                             Open the <strong>Appointments</strong> section to
                             view all booked appointments in a single list.
                             <div>
@@ -1163,6 +1187,19 @@ const page = () => {
                             </div>
                           </li>
                           <li data-target="3" className="cursor-pointer">
+                            Click the phone number listed in the Appointments to
+                            view all reservations linked to a patient (past,
+                            present, and upcoming).
+                            <div>
+                              <img
+                                className="mobile-step-img"
+                                src="assets/image/content/numberlisted.png"
+                                style={{ objectFit: "contain" }}
+                                alt=""
+                              />
+                            </div>
+                          </li>
+                          <li data-target="4" className="cursor-pointer">
                             Check <strong>appointment timing</strong>, including
                             both booking and scheduled date/time.
                             <div>
@@ -1174,7 +1211,7 @@ const page = () => {
                               />
                             </div>
                           </li>
-                          <li data-target="4" className="cursor-pointer">
+                          <li data-target="5" className="cursor-pointer">
                             View the <strong>assigned doctor</strong> and their
                             <strong>department</strong> for each appointment.
                             <div>
@@ -1186,7 +1223,7 @@ const page = () => {
                               />
                             </div>
                           </li>
-                          <li data-target="5" className="cursor-pointer">
+                          <li data-target="6" className="cursor-pointer">
                             Update or verify the <strong>status</strong>
                             (Confirmed, Completed, or Cancelled).
                             <div>
@@ -1202,7 +1239,7 @@ const page = () => {
                             Use the <strong>contact icons</strong> to
                             communicate with patients:
                             <ul className="lists">
-                              <li data-target="6 " className="cursor-pointer">
+                              <li data-target="7 " className="cursor-pointer">
                                 <strong>Email Icon:</strong> Send an email
                                 directly.
                                 <div>
@@ -1214,7 +1251,7 @@ const page = () => {
                                   />
                                 </div>
                               </li>
-                              <li data-target="7" className="cursor-pointer">
+                              <li data-target="8" className="cursor-pointer">
                                 <strong>WhatsApp Icon:</strong> Send a message
                                 via WhatsApp.
                                 <div>
@@ -1226,7 +1263,7 @@ const page = () => {
                                   />
                                 </div>
                               </li>
-                              <li data-target="8" className="cursor-pointer">
+                              <li data-target="9" className="cursor-pointer">
                                 <strong>Message Icon:</strong> Use another
                                 available messaging app from your system.
                                 <div>
@@ -1240,7 +1277,7 @@ const page = () => {
                               </li>
                             </ul>
                           </li>
-                          <li data-target="9">
+                          <li data-target="10">
                             Use the <strong>Search Bar</strong> to find patients
                             by name, email, phone number.
                             <div>
@@ -1252,7 +1289,7 @@ const page = () => {
                               />
                             </div>
                           </li>
-                          <li data-target="10">
+                          <li data-target="11">
                             Apply the <strong>Filter Dropdown</strong> to sort
                             appointments by their status.
                             <div>
@@ -1292,6 +1329,13 @@ const page = () => {
                           <div>
                             <img
                               src="assets/image/content/Appointdetails.png"
+                              style={{ objectFit: "contain" }}
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/numberlisted.png"
                               style={{ objectFit: "contain" }}
                               alt=""
                             />
@@ -1501,15 +1545,16 @@ const page = () => {
                           <li>
                             <strong># –</strong> Serial number of each entry.
                           </li>
-                          <li>
-                            <strong>Who Called –</strong> Name of the caller.
-                          </li>
+
                           <li>
                             <strong>Email –</strong> Caller’s email address.
                           </li>
                           <li>
-                            <strong>Number –</strong> Complete phone number
-                            (including country code).
+                            <strong>Number –</strong> The caller number is
+                            displayed. If an appointment is reserved from the
+                            call and the patient’s contact number is later
+                            modified, the original caller number remains
+                            unchanged and unaffected.
                           </li>
                           <li>
                             <strong>Date –</strong> Date of the call (formatted
@@ -1523,8 +1568,10 @@ const page = () => {
                             <strong>Duration –</strong> Length of the call.
                           </li>
                           <li>
-                            <strong>To Whom –</strong> Internal staff member or
-                            department the call was directed to.
+                            <strong>To Whom –</strong> Displays the clinic's
+                            center number if no appointment was booked from the
+                            call. If an appointment was successfully reserved,
+                            it shows the assigned doctor's name instead.
                           </li>
                           <li>
                             <strong>Full Call –</strong> Provides audio playback
@@ -2297,10 +2344,8 @@ const page = () => {
                     <ul className="lists">
                       <li>
                         Displays <strong>Serial Number (#)</strong>,{" "}
-                        <strong>Call SID</strong> (a unique ID assigned by
-                        Twilio), <strong>Phone Number</strong>,{" "}
-                        <strong>To Phone Number</strong> (the recipient’s
-                        number), <strong>Call Quality Rating</strong>,{" "}
+                        <strong>Phone Number</strong>,{" "}
+                        <strong>Call Quality Rating</strong>,{" "}
                         <strong>Needs Addressed Rating</strong>, and
                         <strong>Contact options</strong> (WhatsApp or Message)
                         for additional context.
@@ -2332,7 +2377,7 @@ const page = () => {
                           <strong>How to Use:</strong>
                         </p>
                         <ul className=" lists steps">
-                          <li data-target="11" className="cursor-pointer">
+                          <li data-target="10" className="cursor-pointer">
                             Open the <strong>Call Reviews</strong> tab to view
                             all recorded call feedback.
                             <img
@@ -2358,21 +2403,9 @@ const page = () => {
                               />
                             </div>
                           </li>
+
                           <li data-target="3" className="cursor-pointer">
-                            Use the <strong>Call SID</strong> to reference the
-                            unique ID assigned to each call.
-                            <div>
-                              <img
-                                src="assets/image/content/callSid1.png"
-                                className="mobile-step-img"
-                                style={{ objectFit: "contain" }}
-                                alt=""
-                              />
-                            </div>
-                          </li>
-                          <li data-target="4" className="cursor-pointer">
-                            Review the Phone Number of the caller and the To
-                            Phone Number to see whom the call was made to.
+                            Review the Phone Number of the caller.
                             <div>
                               <img
                                 src="assets/image/content/num-tonum.PNG"
@@ -2383,7 +2416,7 @@ const page = () => {
                             </div>
                           </li>
 
-                          <li data-target="6" className="cursor-pointer">
+                          <li data-target="5" className="cursor-pointer">
                             View the <strong>Call Quality Rating</strong> to
                             assess communication performance.
                             <div>
@@ -2395,7 +2428,7 @@ const page = () => {
                               />
                             </div>
                           </li>
-                          <li data-target="7" className="cursor-pointer">
+                          <li data-target="6" className="cursor-pointer">
                             {" "}
                             Check the <strong>Needs Addressed Rating</strong>
                             to evaluate how effectively patient needs were
@@ -2409,7 +2442,7 @@ const page = () => {
                               />
                             </div>
                           </li>
-                          <li data-target="8" className="cursor-pointer">
+                          <li data-target="7" className="cursor-pointer">
                             Click <strong>Contact</strong> to reach out patients
                             via WhatsApp, or any other supported messaging app.
                             <div>
@@ -2421,7 +2454,7 @@ const page = () => {
                               />
                             </div>
                           </li>
-                          <li data-target="9" className="cursor-pointer">
+                          <li data-target="8" className="cursor-pointer">
                             Click on column headers (e.g.,{" "}
                             <strong>Call SID</strong>,{" "}
                             <strong>Phone Number</strong>,{" "}
@@ -2439,7 +2472,7 @@ const page = () => {
                               />
                             </div>
                           </li>
-                          <li data-target="10" className="cursor-pointer">
+                          <li data-target="9" className="cursor-pointer">
                             Use the <strong>Search bar</strong> to quickly find
                             a specific call review by <strong>SID</strong> or{" "}
                             <strong>Caller Number</strong>.
@@ -2484,13 +2517,7 @@ const page = () => {
                               style={{ objectFit: "contain" }}
                             />
                           </div>
-                          <div>
-                            <img
-                              src="assets/image/content/callSid1.png"
-                              style={{ objectFit: "contain" }}
-                              alt=""
-                            />
-                          </div>
+
                           <div>
                             <img
                               src="assets/image/content/num-tonum.PNG"
@@ -2719,13 +2746,19 @@ const page = () => {
                       ascending or descending order.
                     </li>
                     <li>
-                      <strong>Export Button:</strong> This allows you to
-                      download filtered or complete reports in
-                      <strong>.xls format</strong>. Exported reports are saved
-                      in an <strong>encrypted ZIP folder</strong>, and a{" "}
-                      <strong>daily-generated password</strong> is provided to
-                      unlock it. Each password is valid only for the file
-                      downloaded on that specific day.
+                      <strong>Export Button:</strong> Downloads reports in .xls
+                      format within an encrypted ZIP folder. A password is
+                      provided to unlock it, valid only for same day’s file.
+                      <ul className="lists">
+                        <li>
+                          If any filters are applied,{" "}
+                          <strong>only the filtered data is exported.</strong>
+                        </li>
+                        <li>
+                          If no filters are active,{" "}
+                          <strong>the complete dataset is exported.</strong>
+                        </li>
+                      </ul>
                     </li>
                     <li>
                       <strong>Contact Options:</strong> Use icons to reach
@@ -6152,7 +6185,7 @@ const page = () => {
                       <ul className="lists">
                         <li>
                           Displays existing configurations with details like{" "}
-                          <strong>Instance ID</strong>,<strong>Status</strong>,
+                          <strong>Instance ID</strong>, <strong>Status</strong>,
                           and <strong>Action</strong> (View Details).
                         </li>
                         <li>
@@ -6163,7 +6196,7 @@ const page = () => {
                         <li>
                           Requires entering WhatsApp API credentials such as{" "}
                           <strong>Instance ID</strong>,
-                          <strong>Webhook URL</strong>, and{" "}
+                          <strong> Webhook URL</strong>, and{" "}
                           <strong>Webhook Event</strong> to enable
                           WhatsApp-based reminders and notifications.
                         </li>
@@ -6774,11 +6807,11 @@ const page = () => {
                               business address, business country and city,
                               primary email, and primary contact number.
                             </li>
-                            <li>
+                            {/* <li>
                               <strong>Document Uploads:</strong> View and upload
                               important documents such as trade license, ID of
                               the responsible person, and signed contract.
-                            </li>
+                            </li> */}
                             <li>
                               <strong>Delete Account:</strong> Permanently
                               remove your account and all associated data from
@@ -6914,11 +6947,9 @@ const page = () => {
                                   </ul>
                                 </li>
 
-                                <li>
-                                  <strong>Manage Uploaded Documents</strong>
+                                {/* <strong>Manage Uploaded Documents</strong> */}
 
-                                  <ul>
-                                    <li
+                                {/* <li
                                       data-target="10"
                                       className="cursor-pointer"
                                     >
@@ -6930,16 +6961,14 @@ const page = () => {
                                           src="assets/image/content/uploadreplace.PNG"
                                           className="mobile-step-img"
                                           style={{ objectFit: "contain" }}
-                                        />
-                                      </div>
-                                    </li>
-                                    <strong>
-                                      Ensure that no required field is left
-                                      blank, as the system will not save
-                                      incomplete updates.
-                                    </strong>
-                                  </ul>
-                                </li>
+                                        /> */}
+                                {/* </div> */}
+
+                                <strong>
+                                  Ensure that no required field is left blank,
+                                  as the system will not save incomplete
+                                  updates.
+                                </strong>
 
                                 <li>
                                   <strong>Delete Account Permanently</strong>
