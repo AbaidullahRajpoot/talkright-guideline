@@ -616,11 +616,15 @@ export default function Home() {
 
                             <li>
                               <i className="ri-information-line"></i>Select your
-                              Timezone from the dropdown. This is a one-time,
-                              irreversible selection that sets the rigid
-                              timezone for the entire platform (all schedules,
-                              reports, reminders, and cron jobs will follow this
-                              timezone).
+                              Timezone from the dropdown. This is one-time,
+                              irreversible selection that sets the fixed
+                              timezone for the entire platform (all
+                              appointments, reports, reminders, and automated
+                              processes) will follow this timezone. It will be
+                              automatically suggested based on your selected
+                              business country. If you prefer a different
+                              timezone, you may change it, but choose carefully
+                              as it cannot be modified later.
                             </li>
 
                             <li>
