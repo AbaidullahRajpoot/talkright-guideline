@@ -181,11 +181,10 @@ const page = () => {
                       standardized to your selected time zone.
                     </li>
                     <li>
-                      Includes a date filter to review Call Activity, Total
-                      Appointments, and Survey Overview within selected ranges
-                      (Last 7 Days, Last 15 Days, Last 30 Days, or a Custom
-                      Range). <br /> The default time filter is set to Last 7
-                      days.
+                      Includes a date filter to review Call Activity, and Survey
+                      Overview within selected ranges (Last 7 Days, Last 15
+                      Days, Last 30 Days, or a Custom Range). The default time
+                      filter is set to Last 7 days.
                     </li>
 
                     <li>
@@ -231,9 +230,10 @@ const page = () => {
                     <strong>What it is:</strong>
                   </p>
                   <p>
-                    {" "}
-                    The <strong>Total Appointments</strong> card shows the total
-                    number of appointments booked over time, helping you monitor
+                    The <strong>Total Appointments</strong> card displays the
+                    total number of appointments booked. By default, it shows
+                    appointments for the current month, but you can use the
+                    monthly filter to view previous months. This helps track
                     scheduling activity and identify trends.
                   </p>
 
@@ -242,31 +242,25 @@ const page = () => {
                   </p>
                   <ul className="lists">
                     <li>
-                      Automatically tracks and counts all appointments created
-                      within the system.
+                      Automatically counts all appointments created in the
+                      system.
                     </li>
                     <li>
-                      Updates periodically as new appointments are added to the
-                      system, no matter their status.
+                      Updates in real-time as new appointments are added,
+                      regardless of their status.
                     </li>
                     <li>
-                      Displays a visual graph with color-coded segments for each
+                      Shows a visual graph with color-coded segments for each
                       department.
-                      <ul className="lists">
-                        <li>
-                          <strong>Top 5 departments</strong> with the greatest
-                          number of appointments are shown{" "}
-                          <strong>individually</strong> based on the selected
-                          filter.
-                        </li>
-                        <li>
-                          <strong>Default filter:</strong> Last 7 days.
-                        </li>
-                        <li>
-                          All other departments are grouped under{" "}
-                          <strong>"Others"</strong> for a clean, focused view.
-                        </li>
-                      </ul>
+                    </li>
+                    <li>
+                      The top 5 departments with the highest number of
+                      appointments are displayed individually. All other
+                      departments with fewer appointments are grouped under
+                      Others for a clear, focused view.
+                    </li>
+                    <li>
+                      <strong>Default filter:</strong> Current Month.
                     </li>
                   </ul>
 
@@ -358,8 +352,8 @@ const page = () => {
                   </p>
                   <p>
                     The <strong>Calendar Appointments</strong> card provides a
-                    quick summary of all scheduled appointments, offering
-                    instant visibility into booking activity.
+                    quick overview of all scheduled appointments, giving instant
+                    insight into booking activity.
                   </p>
 
                   <p>
@@ -367,41 +361,46 @@ const page = () => {
                   </p>
                   <ul className="lists">
                     <li>
-                      Displays the total number of appointments created in the
-                      system.
+                      Shows the total number of appointments in the system.
                     </li>
                     <li>
-                      Separates the count of <strong>New Appointments</strong>{" "}
-                      (upcoming scheduled bookings) and
-                      <strong>Past Appointments</strong> (completed or expired).
+                      Separates counts into:
+                      <ul className="lists">
+                        <li>
+                          <strong>New Appointments</strong> – upcoming scheduled
+                          bookings
+                        </li>
+                        <li>
+                          <strong>Past/Missed Appointments</strong> – cancelled
+                          or expired bookings
+                        </li>
+                        <li>
+                          <strong>Completed Appointments</strong> – all
+                          successfully completed bookings
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      Shows <strong>Last 7 Days</strong> data for a quick view
-                      of recent schedulings.
+                      Includes a circular progress indicator to visualize the
+                      percentage of completed appointments.
                     </li>
                     <li>
-                      Features a <strong>circular progress indicator</strong>{" "}
-                      that visually represents the percentage of successfully
-                      completed appointments.
-                    </li>
-                    <li>
-                      Updates automatically as new appointments are created or
-                      existing ones are completed, ensuring real-time accuracy.
+                      Updates automatically as appointments are added or
+                      completed, ensuring real-time accuracy.
                     </li>
                   </ul>
 
-                  <h4>Today Report</h4>
+                  <h4>Today Appointments</h4>
                   <p>
                     <strong>What it is:</strong>
                   </p>
                   <p>
-                    {" "}
-                    The Today Report section provides a comprehensive overview
-                    of all patient appointments scheduled for the current day.
-                    It enables hospital staff to efficiently monitor, manage,
-                    and track appointment activities in real time, ensuring
-                    smooth operations and timely patient handling throughout the
-                    day.
+                    The Today Appointments' section provides a comprehensive
+                    overview of all patient appointments scheduled for the
+                    current day. It enables hospital staff to efficiently
+                    monitor, manage, and track appointment activities in real
+                    time, ensuring smooth operations and timely patient handling
+                    throughout the day.
                   </p>
 
                   <p>
@@ -982,10 +981,7 @@ const page = () => {
               <div className="intero">
                 <h1>Appointments</h1>
                 <p className="popins-data-helpex">
-                  The <strong>Appointments</strong> section provides a
-                  comprehensive view of all scheduled bookings in one place. It
-                  allows you to quickly <strong>view, search, and track</strong>{" "}
-                  appointment details, including the{" "}
+                  The <strong>Appointments</strong> section provides a comprehensive view of all scheduled bookings in one place. It allows you to quickly <strong>view, search,</strong> and <strong>track</strong> appointment details, including the <strong>Appointment ID, department, doctor’s name, appointment creation date and time, appointment date and time,</strong> and <strong>patient information</strong> such as name, phone number, and email. You can also monitor the status of each appointment, whether it’s confirmed, completed, or canceled. This section ensures that all appointments remain well-organized, easily accessible, and efficiently managed for smooth clinic operations.
                   <strong>
                     department, doctor’s name, appointment date and time,
                   </strong>{" "}
@@ -1083,8 +1079,7 @@ const page = () => {
                     </p>
                     <ul className="lists ">
                       <li>
-                        <strong>Appointment Details:</strong> View all booked
-                        appointments in a single interface.
+                        <strong>Appointment Details:</strong>  View all booked appointments in a single, organized interface, each displayed with a unique Appointment ID.
                       </li>
                       <li>
                         <strong>Patient Information:</strong> Includes Name,
@@ -1163,8 +1158,7 @@ const page = () => {
                         </p>
                         <ul className="lists steps">
                           <li data-target="12" className="cursor-pointer">
-                            Open the <strong>Appointments</strong> section to
-                            view all booked appointments in a single list.
+                            Open the Appointments section to view all booked appointments in a single list, each displayed with its unique Appointment ID.
                             <div>
                               <img
                                 className="mobile-step-img"
@@ -6173,20 +6167,21 @@ const page = () => {
                       </p>
                       <p>
                         The <strong>WhatsApp Configuration</strong> section
-                        links your system with WhatsApp to automate patient
+                        connects your system with WhatsApp to automate patient
                         communication, including appointment confirmations,
-                        reminders, and feedback polls. It ensures smooth message
-                        delivery and stable integration with your WhatsApp API
-                        setup.
+                        reminders, follow-ups, and feedback polls. It ensures
+                        smooth message delivery and stable integration with your
+                        WhatsApp API setup.
                       </p>
                       <p>
                         <strong>Description:</strong>
                       </p>
                       <ul className="lists">
                         <li>
-                          Displays existing configurations with details like{" "}
-                          <strong>Instance ID</strong>, <strong>Status</strong>,
-                          and <strong>Action</strong> (View Details).
+                          Displays all existing configurations with details such
+                          as <strong>Instance ID</strong>,{" "}
+                          <strong>Status</strong>, and{" "}
+                          <strong>Actions (View Details)</strong>.
                         </li>
                         <li>
                           Allows adding a new configuration using the{" "}
@@ -6194,11 +6189,25 @@ const page = () => {
                           setup).
                         </li>
                         <li>
-                          Requires entering WhatsApp API credentials such as{" "}
-                          <strong>Instance ID</strong>,
-                          <strong> Webhook URL</strong>, and{" "}
-                          <strong>Webhook Event</strong> to enable
+                          Requires entering{" "}
+                          <strong>WhatsApp API credentials</strong> such as
+                          <strong>Instance ID</strong>,{" "}
+                          <strong>Webhook URL</strong>, and{" "}
+                          <strong>Webhook Event</strong> to activate
                           WhatsApp-based reminders and notifications.
+                        </li>
+                        <li>
+                          To configure WhatsApp for AI messaging or automated
+                          notifications, the user must be subscribed to any
+                          active package. Without an active subscription,
+                          WhatsApp configuration cannot be completed.
+                        </li>
+                        <li>
+                          If the user{" "}
+                          <strong>disconnects their WhatsApp</strong> from the
+                          panel, all automated WhatsApp chat, AI messaging, and
+                          WhatsApp notifications will be{" "}
+                          <strong>immediately disabled</strong>.
                         </li>
                       </ul>
                     </div>
