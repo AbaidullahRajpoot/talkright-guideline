@@ -981,7 +981,20 @@ const page = () => {
               <div className="intero">
                 <h1>Appointments</h1>
                 <p className="popins-data-helpex">
-                  The <strong>Appointments</strong> section provides a comprehensive view of all scheduled bookings in one place. It allows you to quickly <strong>view, search,</strong> and <strong>track</strong> appointment details, including the <strong>Appointment ID, department, doctor’s name, appointment creation date and time, appointment date and time,</strong> and <strong>patient information</strong> such as name, phone number, and email. You can also monitor the status of each appointment, whether it’s confirmed, completed, or canceled. This section ensures that all appointments remain well-organized, easily accessible, and efficiently managed for smooth clinic operations.
+                  The <strong>Appointments</strong> section provides a
+                  comprehensive view of all scheduled bookings in one place. It
+                  allows you to quickly <strong>view, search,</strong> and{" "}
+                  <strong>track</strong> appointment details, including the{" "}
+                  <strong>
+                    Appointment ID, department, doctor’s name, appointment
+                    creation date and time, appointment date and time,
+                  </strong>{" "}
+                  and <strong>patient information</strong> such as name, phone
+                  number, and email. You can also monitor the status of each
+                  appointment, whether it’s confirmed, completed, or canceled.
+                  This section ensures that all appointments remain
+                  well-organized, easily accessible, and efficiently managed for
+                  smooth clinic operations.
                   <strong>
                     department, doctor’s name, appointment date and time,
                   </strong>{" "}
@@ -1079,7 +1092,9 @@ const page = () => {
                     </p>
                     <ul className="lists ">
                       <li>
-                        <strong>Appointment Details:</strong>  View all booked appointments in a single, organized interface, each displayed with a unique Appointment ID.
+                        <strong>Appointment Details:</strong> View all booked
+                        appointments in a single, organized interface, each
+                        displayed with a unique Appointment ID.
                       </li>
                       <li>
                         <strong>Patient Information:</strong> Includes Name,
@@ -1158,7 +1173,9 @@ const page = () => {
                         </p>
                         <ul className="lists steps">
                           <li data-target="12" className="cursor-pointer">
-                            Open the Appointments section to view all booked appointments in a single list, each displayed with its unique Appointment ID.
+                            Open the Appointments section to view all booked
+                            appointments in a single list, each displayed with
+                            its unique Appointment ID.
                             <div>
                               <img
                                 className="mobile-step-img"
@@ -2713,11 +2730,11 @@ const page = () => {
                   <p>
                     Displays{" "}
                     <strong>
-                      Serial Number (#), Patient Name, Email, Phone Number,
-                      Appointment Date & Time, Doctor, Department, Status, Call
-                      Info,
+                      Serial Number (#), Appointment ID, Patient Name, Email,
+                      Phone Number, Appointment Date & Time, Doctor, Department,
+                      Status, Call Info,
                     </strong>{" "}
-                    and <strong>Contact</strong> options for easy referenc
+                    and <strong>Contact</strong> options for easy reference.
                   </p>
                   <ul className="lists">
                     <li>
@@ -2847,14 +2864,7 @@ const page = () => {
                           </div>
                         </li>
                         <li data-target="6" className="cursor-pointer">
-                          Review key details such as{" "}
-                          <strong>Serial Number (#)</strong>,{" "}
-                          <strong>Patient Name</strong>, <strong>Email</strong>,{" "}
-                          <strong>Phone Number</strong>,
-                          <strong>Appointment Date & Time</strong>,{" "}
-                          <strong>Doctor</strong>,<strong>Department</strong>,
-                          and <strong>Status</strong> (Confirmed, Completed, or
-                          Canceled)
+                          Review key details such as <strong>Serial Number (#), Appointment ID, Patient Name, Email, Phone Number,Appointment Date & Time, Doctor,Department,</strong> and <strong>Status</strong> (Confirmed, Completed, or Canceled).
                           <div>
                             <img
                               src="assets/image/content/report-6.PNG"

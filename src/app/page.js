@@ -800,11 +800,7 @@ export default function Home() {
                     </li>
                     <li>
                       <strong>System Settings:</strong>
-                      This section allows access to essential system
-                      configurations, such as WhatsApp integration, automated
-                      appointment reminders via cron jobs, and logo
-                      customization — providing a smooth, branded, and fully
-                      tailored user experience.
+                      This section provides access to all essential system configurations. You can manage notification intervals (deciding which notifications are sent and when), set up WhatsApp configuration for automated appointment messages and reminders through cron jobs (automating reminders, notifications, etc.), configure email settings to send system emails directly from your own address, and customize the system logo for providing a smooth user experience.
                     </li>
                     <li>
                       <strong>Profile Menu:</strong>
