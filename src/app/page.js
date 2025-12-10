@@ -93,6 +93,17 @@ export default function Home() {
                       number, ensuring seamless, automated appointment handling.
                     </li>
                   </ul>
+                  <p className="popins-data-helpex">
+                    TalkRight also supports customized outbound email
+                    management. Through the Email Configuration module, clinics
+                    can integrate their own email account into the system. Once
+                    configured, all appointment-related communications such as
+                    confirmations, reminders, cancellations, and other
+                    system-generated notifications will be sent directly from
+                    the clinic’s preferred email address. This will allow
+                    clinics to maintain full control over their communication
+                    identity.
+                  </p>
 
                   <p className="popins-data-helpex">
                     In addition to appointment management, TalkRight offers a
@@ -128,8 +139,8 @@ export default function Home() {
                   <p className="popins-data-helpex">
                     Overall, <strong>TalkRight</strong> is designed to simplify
                     healthcare management for both patients and hospital
-                    administrators, ensuring a <strong>smooth</strong>,{" "}
-                    <strong>reliable</strong>, and
+                    administrators, ensuring a{" "}
+                    <strong>smooth, reliable,</strong> and{" "}
                     <strong>intelligent appointment experience</strong>.
                   </p>
                 </div>
@@ -164,6 +175,22 @@ export default function Home() {
                           <strong>Appointments</strong>
                         </p>
                         <p className="feature-text">Book Appointments</p>
+                      </div>
+                    </div>
+                    <div className="col-lg-3 col-md-4 col-sm-6">
+                      <div className="feature-box">
+                        <div className="feature-image">
+                          <span
+                            className="material-symbols-outlined "
+                            style={{ fontSize: "30px", color: "#00ffb9" }}
+                          >
+                            group
+                          </span>
+                        </div>
+                        <p className="feature-name text-center">
+                          <strong>Add Patient History</strong>{" "}
+                        </p>
+                        <p className="feature-text">Manage Patients History</p>
                       </div>
                     </div>
                     <div className="col-lg-3 col-md-4 col-sm-6">
@@ -800,7 +827,15 @@ export default function Home() {
                     </li>
                     <li>
                       <strong>System Settings:</strong>
-                      This section provides access to all essential system configurations. You can manage notification intervals (deciding which notifications are sent and when), set up WhatsApp configuration for automated appointment messages and reminders through cron jobs (automating reminders, notifications, etc.), configure email settings to send system emails directly from your own address, and customize the system logo for providing a smooth user experience.
+                      This section provides access to all essential system
+                      configurations. You can manage notification intervals
+                      (deciding which notifications are sent and when), set up
+                      WhatsApp configuration for automated appointment messages
+                      and reminders through cron jobs (automating reminders,
+                      notifications, etc.), configure email settings to send
+                      system emails directly from your own address, and
+                      customize the system logo for providing a smooth user
+                      experience.
                     </li>
                     <li>
                       <strong>Profile Menu:</strong>
