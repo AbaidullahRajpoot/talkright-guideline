@@ -2864,7 +2864,14 @@ const page = () => {
                           </div>
                         </li>
                         <li data-target="6" className="cursor-pointer">
-                          Review key details such as <strong>Serial Number (#), Appointment ID, Patient Name, Email, Phone Number,Appointment Date & Time, Doctor,Department,</strong> and <strong>Status</strong> (Confirmed, Completed, or Canceled).
+                          Review key details such as{" "}
+                          <strong>
+                            Serial Number (#), Appointment ID, Patient Name,
+                            Email, Phone Number,Appointment Date & Time,
+                            Doctor,Department,
+                          </strong>{" "}
+                          and <strong>Status</strong> (Confirmed, Completed, or
+                          Canceled).
                           <div>
                             <img
                               src="assets/image/content/report-6.PNG"
@@ -5445,11 +5452,12 @@ const page = () => {
                         <strong>What it is:</strong>
                       </p>
                       <p>
-                        The <strong>WhatsApp Templates</strong> section contains
-                        pre-written message formats used for communicating with
-                        patients through WhatsApp. These templates are designed
-                        for appointment confirmations, reminders, cancellations,
-                        and other important notifications.
+                        The <strong>WhatsApp Templates </strong> section
+                        contains pre-written message formats used for
+                        communicating with patients through WhatsApp. These
+                        templates are designed for appointment confirmations,
+                        reminders, cancellations, and other important
+                        notifications.
                       </p>
 
                       <p>
@@ -6245,7 +6253,7 @@ const page = () => {
                               </div>
                             </li>
                             <li data-target="2" className="cursor-pointer mb-3">
-                              Click <strong>Add WhatsApp Config</strong>
+                              Click <strong>Add WhatsApp Config </strong>
                               to create a new configuration.
                               <div>
                                 <img
@@ -6340,6 +6348,261 @@ const page = () => {
                         </div>
                       </div>
                     </div>
+
+                    {/* -----------Email configuration */}
+
+                    <h2 className="mt-5">Email Configuration</h2>
+                    <ul
+                      className="nav nav-tabs mt-3"
+                      id="logoTab"
+                      role="tablist"
+                    >
+                      <li className="nav-item" role="presentation">
+                        <button
+                          className="nav-link active"
+                          id="logo-preview-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#logo-preview"
+                          type="button"
+                          role="tab"
+                          aria-controls="logo-preview"
+                          aria-selected="true"
+                        >
+                          <i className="ri-eye-line"></i>Preview
+                        </button>
+                      </li>
+                      <li className="nav-item" role="presentation">
+                        <button
+                          className="nav-link"
+                          id="logo-usage-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#logo-usage"
+                          type="button"
+                          role="tab"
+                          aria-controls="logo-usage"
+                          aria-selected="false"
+                        >
+                          <span className="material-symbols-outlined">
+                            build
+                          </span>
+                          Usage
+                        </button>
+                      </li>
+                      <li className="nav-item" role="presentation">
+                        <button
+                          className="nav-link"
+                          id="logo-how-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#logo-how"
+                          type="button"
+                          role="tab"
+                          aria-controls="logo-how"
+                          aria-selected="false"
+                        >
+                          <span className="material-symbols-outlined">
+                            menu_book
+                          </span>
+                          How to Use
+                        </button>
+                      </li>
+                    </ul>
+
+                    <div
+                      className="tab-content second-content"
+                      id="logoTabContent"
+                    >
+                      <div
+                        className="tab-pane fade show active"
+                        id="logo-preview"
+                        role="tabpanel"
+                        aria-labelledby="logo-preview-tab"
+                      >
+                        <img
+                          src="./assets/image/content/email-config-setting.png"
+                          alt="Logo Settings Preview"
+                        />
+                      </div>
+                      {/*✅ 6. Logo Settings Section */}
+                      <div
+                        className="tab-pane fade"
+                        id="logo-usage"
+                        role="tabpanel"
+                        aria-labelledby="logo-usage-tab"
+                      >
+                        <p>
+                          <strong>What it is:</strong>
+                        </p>
+                        <p>
+                          The <strong>Logo Settings</strong> section allows you
+                          to manage your system’s branding by uploading logos
+                          for both <strong>Light Mode</strong> and{" "}
+                          <strong>Dark Mode</strong>. Your uploaded logo will be
+                          displayed above the sidebar menu for consistent brand
+                          visibility.
+                        </p>
+                        <p>
+                          <strong>Description:</strong>
+                        </p>
+                        <ul className="lists">
+                          <li>
+                            Upload different logos for{" "}
+                            <strong>Light Mode</strong> and{" "}
+                            <strong>Dark Mode</strong> to match the system
+                            theme.
+                          </li>
+                          <li>
+                            Supports <strong>drag-and-drop</strong> or{" "}
+                            <strong>click-to-upload</strong> functionality for
+                            easy logo management.
+                          </li>
+                          <li>
+                            Helps maintain <strong>consistent</strong> and{" "}
+                            <strong>professional branding</strong>
+                            across the entire application interface.
+                          </li>
+                        </ul>
+                      </div>
+                      <div
+                        className="tab-pane fade how-to-use  "
+                        id="logo-how"
+                        role="tabpanel"
+                        aria-labelledby="logo-how-tab"
+                      >
+                        <div className="d-md-flex justify-content-md-between col-9 ">
+                          <div className="col-12 col-md-11 col-lg-7 pb-lg-5">
+                            <p>
+                              <strong>How to Use It:</strong>
+                            </p>
+                            <ul className="lists steps ">
+                              <li data-target="4" className="cursor-pointer">
+                                Click <strong>Add Email Config</strong> to
+                                create a new configuration.
+                                <div>
+                                  <img
+                                    src="./assets/image/content/logo-setting-img.png"
+                                    className="mobile-step-img"
+                                    style={{ objectFit: "contain" }}
+                                  />
+                                </div>
+                              </li>
+                              <li data-target="2" className="cursor-pointer">
+                                Enter your email address in the email field.
+                                <div>
+                                  <img
+                                    src="assets/image/content/dragbox.png"
+                                    className="mobile-step-img"
+                                    style={{ objectFit: "contain" }}
+                                  />
+                                </div>
+                              </li>
+
+                              <strong>
+                                Google App Password Setup (Gmail Users):
+                              </strong>
+                              <p>
+                                Click your profile icon (top right) and open
+                                <strong>Manage Your Google Account</strong>.
+                              </p>
+                              <p>
+                                Go to <strong>Security</strong> and enable{" "}
+                                <strong>2-Step Verification</strong>.
+                              </p>
+                              <ul>
+                                <li data-target="3" className="cursor-pointer">
+                                  Open <strong>App Passwords</strong>, add your
+                                  app name, and generate the password.
+                                  <div>
+                                    <img
+                                      src="assets/image/content/LightDark.png"
+                                      className="mobile-step-img"
+                                      style={{ objectFit: "contain" }}
+                                    />
+                                  </div>
+                                </li>
+                                <li data-target="3" className="cursor-pointer">
+                                  Copy the generated App Password.
+                                  <div>
+                                    <img
+                                      src="assets/image/content/LightDark.png"
+                                      className="mobile-step-img"
+                                      style={{ objectFit: "contain" }}
+                                    />
+                                  </div>
+                                </li>
+                              </ul>
+
+                              <strong>Complete Email Configuration: </strong>
+                              <p>
+                                Paste the App Password into the password field.
+                              </p>
+                              <p>
+                                Add the <strong>SMTP host</strong>, select the{" "}
+                                <strong>Port</strong>, and choose your{" "}
+                                <strong>Email Service Provider</strong>.
+                              </p>
+                              <ul className="lists steps  ">
+                                <li data-target="3" className="cursor-pointer">
+                                  Click <strong>Save</strong> to complete the
+                                  setup.
+                                  <div>
+                                    <img
+                                      src="assets/image/content/LightDark.png"
+                                      className="mobile-step-img"
+                                      style={{ objectFit: "contain" }}
+                                    />
+                                  </div>
+                                </li>
+
+                                <li data-target="3" className="cursor-pointer">
+                                  Once configured, all email notifications and
+                                  reminders will be sent from your email
+                                  address.
+                                  <div>
+                                    <img
+                                      src="assets/image/content/LightDark.png"
+                                      className="mobile-step-img"
+                                      style={{ objectFit: "contain" }}
+                                    />
+                                  </div>
+                                </li>
+                              </ul>
+                            </ul>
+                          </div>
+                          <div className="col-4">
+                            <div className="stack ">
+                              <div>
+                                <img
+                                  src="assets/image/content/Save Changes.png"
+                                  style={{ objectFit: "contain" }}
+                                />
+                              </div>
+                              <div>
+                                <img
+                                  src="assets/image/content/dragbox.png"
+                                  style={{ objectFit: "contain" }}
+                                  alt=""
+                                />
+                              </div>
+                              <div>
+                                <img
+                                  src="assets/image/content/LightDark.png"
+                                  style={{ objectFit: "contain" }}
+                                  alt=""
+                                />
+                              </div>
+                              <div>
+                                <img
+                                  src="assets/image/content/logo-setting-img.png"
+                                  style={{ objectFit: "contain" }}
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* -------------------ends here */}
 
                     <h2 className="mt-5">Logo Settings</h2>
                     <ul
@@ -6468,7 +6731,7 @@ const page = () => {
                                 data-target="4"
                                 className="cursor-pointer mb-4"
                               >
-                                Open the <strong>Logo Settings</strong>
+                                Open the <strong>Logo Settings </strong>
                                 subsection.
                                 <div>
                                   <img
@@ -6497,7 +6760,7 @@ const page = () => {
                                 className="cursor-pointer mb-4"
                               >
                                 Upload <strong>separate logos</strong> for
-                                <strong>Light Mode</strong> and{" "}
+                                <strong> Light Mode</strong> and{" "}
                                 <strong>Dark Mode</strong>.
                                 <div>
                                   <img

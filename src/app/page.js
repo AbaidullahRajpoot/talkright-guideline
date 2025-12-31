@@ -95,14 +95,14 @@ export default function Home() {
                   </ul>
                   <p className="popins-data-helpex">
                     TalkRight also supports customized outbound email
-                    management. Through the Email Configuration module, clinics
-                    can integrate their own email account into the system. Once
-                    configured, all appointment-related communications such as
-                    confirmations, reminders, cancellations, and other
-                    system-generated notifications will be sent directly from
-                    the clinic’s preferred email address. This will allow
-                    clinics to maintain full control over their communication
-                    identity.
+                    management. Through the <strong>Email Configuration</strong>{" "}
+                    module, clinics can integrate their own email account into
+                    the system. Once configured, all appointment-related
+                    communications such as confirmations, reminders,
+                    cancellations, and other system-generated notifications will
+                    be sent directly from the clinic’s preferred email address.
+                    This will allow clinics to maintain full control over their
+                    communication identity.
                   </p>
 
                   <p className="popins-data-helpex">
