@@ -166,7 +166,7 @@ export default function Home() {
                         <div className="feature-image">
                           <span
                             className="material-symbols-outlined "
-                            style={{ fontSize: "30px", color: "#00ffb9" }}
+                            style={{ fontSize: "30px", color: "#009d71" }}
                           >
                             book
                           </span>
@@ -174,7 +174,9 @@ export default function Home() {
                         <p className="feature-name">
                           <strong>Appointments</strong>
                         </p>
-                        <p className="feature-text">Book Appointments</p>
+                        <p className="feature-text">
+                          View Appointment Details & Manage Status
+                        </p>
                       </div>
                     </div>
                     <div className="col-lg-3 col-md-4 col-sm-6">
@@ -182,15 +184,15 @@ export default function Home() {
                         <div className="feature-image">
                           <span
                             className="material-symbols-outlined "
-                            style={{ fontSize: "30px", color: "#00ffb9" }}
+                            style={{ fontSize: "30px", color: "#009d71" }}
                           >
                             group
                           </span>
                         </div>
                         <p className="feature-name text-center">
-                          <strong>Add Patient History</strong>{" "}
+                          <strong>Patient History</strong>{" "}
                         </p>
-                        <p className="feature-text">Manage Patients History</p>
+                        <p className="feature-text">View Patient History</p>
                       </div>
                     </div>
                     <div className="col-lg-3 col-md-4 col-sm-6">
@@ -198,7 +200,7 @@ export default function Home() {
                         <div className="feature-image">
                           <span
                             className="material-symbols-outlined "
-                            style={{ fontSize: "30px", color: "#00ffb9" }}
+                            style={{ fontSize: "30px", color: "#009d71" }}
                           >
                             group
                           </span>
@@ -206,7 +208,9 @@ export default function Home() {
                         <p className="feature-name text-center">
                           <strong>Management</strong>{" "}
                         </p>
-                        <p className="feature-text">Manage Your Doctors</p>
+                        <p className="feature-text">
+                          Manage Your Departments & Doctors
+                        </p>
                       </div>
                     </div>
                     <div className="col-lg-3 col-md-4 col-sm-6">
@@ -214,7 +218,7 @@ export default function Home() {
                         <div className="feature-image">
                           <span
                             className="material-symbols-outlined"
-                            style={{ fontSize: "30px", color: "#00ffb9" }}
+                            style={{ fontSize: "30px", color: "#009d71" }}
                           >
                             phone_callback
                           </span>
@@ -230,7 +234,7 @@ export default function Home() {
                         <div className="feature-image">
                           <span
                             className="material-symbols-outlined "
-                            style={{ fontSize: "30px", color: "#00ffb9" }}
+                            style={{ fontSize: "30px", color: "#009d71" }}
                           >
                             room_preferences
                           </span>
@@ -238,7 +242,10 @@ export default function Home() {
                         <p className="feature-name text-center">
                           <strong>Clinic Management</strong>
                         </p>
-                        <p className="feature-text"> Day Off tracking </p>
+                        <p className="feature-text">
+                          {" "}
+                          Manage Clinic Availability & Days Off{" "}
+                        </p>
                       </div>
                     </div>
                     <div className="col-lg-3 col-md-4 col-sm-6">
@@ -246,7 +253,7 @@ export default function Home() {
                         <div className="feature-image">
                           <span
                             className="material-symbols-outlined  "
-                            style={{ fontSize: "30px", color: "#00ffb9" }}
+                            style={{ fontSize: "30px", color: "#009d71" }}
                           >
                             speed
                           </span>
@@ -262,7 +269,7 @@ export default function Home() {
                         <div className="feature-image">
                           <span
                             className="material-symbols-outlined "
-                            style={{ fontSize: "30px", color: "#00ffb9" }}
+                            style={{ fontSize: "30px", color: "#009d71" }}
                           >
                             credit_card
                           </span>
@@ -278,13 +285,13 @@ export default function Home() {
                         <div className="feature-image">
                           <span
                             className="material-symbols-outlined "
-                            style={{ color: "#00ffb9", fontSize: "30px" }}
+                            style={{ color: "#009d71", fontSize: "30px" }}
                           >
                             calendar_month
                           </span>
                         </div>
                         <p className="feature-name">
-                          <strong>Booking</strong>
+                          <strong>Calendar</strong>
                         </p>
                         <p className="feature-text">Easy Booking</p>
                       </div>
@@ -294,7 +301,7 @@ export default function Home() {
                         <div className="feature-image">
                           <span
                             className="material-symbols-outlined "
-                            style={{ fontSize: "30px", color: "#00ffb9" }}
+                            style={{ fontSize: "30px", color: "#009d71" }}
                           >
                             view_quilt
                           </span>
@@ -302,7 +309,9 @@ export default function Home() {
                         <p className="feature-name text-center">
                           <strong>Template Management</strong>
                         </p>
-                        <p className="feature-text">Manage Templates</p>
+                        <p className="feature-text">
+                          Manage Email & WhatsApp Templates
+                        </p>
                       </div>
                     </div>
                     <div className="col-lg-3 col-md-4 col-sm-6  ">
@@ -310,7 +319,7 @@ export default function Home() {
                         <div className="feature-image">
                           <span
                             className="material-symbols-outlined"
-                            style={{ fontSize: "30px", color: "#00ffb9" }}
+                            style={{ fontSize: "30px", color: "#009d71" }}
                           >
                             settings
                           </span>
@@ -318,7 +327,10 @@ export default function Home() {
                         <p className="feature-name">
                           <strong>System Settings</strong>
                         </p>
-                        <p className="feature-text">Manage Cron Jobs</p>
+                        <p className="feature-text">
+                          Control System Notifications, Communication, &
+                          Branding.
+                        </p>
                       </div>
                     </div>
                     <div className="col-lg-3 col-md-4 col-sm-6 ">
@@ -326,7 +338,7 @@ export default function Home() {
                         <div className="feature-image">
                           <span
                             className="material-symbols-outlined"
-                            style={{ fontSize: "30px", color: "#00ffb9" }}
+                            style={{ fontSize: "30px", color: "#009d71" }}
                           >
                             forum
                           </span>
@@ -334,7 +346,7 @@ export default function Home() {
                         <p className="feature-name">
                           <strong>Reviews</strong>
                         </p>
-                        <p className="feature-text">Ratings and Reviews</p>
+                        <p className="feature-text">Ratings & Reviews</p>
                       </div>
                     </div>
                     <div className="col-lg-3 col-md-4 col-sm-6 ">
@@ -342,7 +354,7 @@ export default function Home() {
                         <div className="feature-image">
                           <span
                             className="material-symbols-outlined"
-                            style={{ fontSize: "30px", color: "#00ffb9" }}
+                            style={{ fontSize: "30px", color: "#009d71" }}
                           >
                             report
                           </span>
@@ -370,11 +382,11 @@ export default function Home() {
                 </div>
               </div>
               <div className="gx-card-content">
-                <div className="file-structure">
+                {/* <div className="file-structure">
                   <ul className="gx-main-structure">
                     <li>
                       <a href="javascript:void(0)" className="gx-struct-drop">
-                        <i className="ri-arrow-up-s-line"></i>
+                        <i className="ri-arrow-down-s-line gx-arrow"></i>
                         <i className="ri-folder-open-line"></i>
                         Quick Start Guide
                       </a>
@@ -385,7 +397,7 @@ export default function Home() {
                             href="javascript:void(0)"
                             className="gx-struct-drop-under"
                           >
-                            <i className="ri-arrow-up-s-line"></i>
+                            <i className="ri-arrow-down-s-line gx-arrow"></i>
                             <i className="ri-file-text-line"></i>
                             Step 1: Register or Log In
                           </a>
@@ -402,7 +414,7 @@ export default function Home() {
                             href="javascript:void(0)"
                             className="gx-struct-drop-under"
                           >
-                            <i className="ri-arrow-up-s-line "></i>
+                            <i className="ri-arrow-down-s-line gx-arrow"></i>
                             <i className="ri-file-text-line"></i>
                             Step 2: Add Departments & Doctors from Doctor
                             Management System
@@ -431,7 +443,7 @@ export default function Home() {
                             href="javascript:void(0)"
                             className="gx-struct-drop-under"
                           >
-                            <i className="ri-arrow-up-s-line"></i>
+                            <i className="ri-arrow-down-s-line gx-arrow"></i>
                             <i className="ri-file-text-line"></i>
                             Step3: Set Templates from Template Management
                           </a>
@@ -453,7 +465,7 @@ export default function Home() {
                             href="javascript:void(0)"
                             className="gx-struct-drop-under"
                           >
-                            <i className="ri-arrow-up-s-line"></i>
+                            <i className="ri-arrow-down-s-line gx-arrow"></i>
                             <i className="ri-file-text-line"></i>
                             Step4: Book Appointment from Appointments
                           </a>
@@ -473,7 +485,10 @@ export default function Home() {
                       </ul>
                     </li>
                   </ul>
-                </div>
+                </div> */}
+
+                {/* ---------------- */}
+
                 <div className="file-structure">
                   <ul className="gx-main-structure">
                     <li>
@@ -481,7 +496,117 @@ export default function Home() {
                         href="javascript:void(0)"
                         className="gx-struct-drop d-flex align-items-end"
                       >
-                        <i className="ri-arrow-up-s-line"></i>
+                        <i className="ri-arrow-down-s-line gx-arrow"></i>
+                        <i className="ri-folder-open-line"></i>
+                        Quick Start Guide
+                      </a>
+
+                      <ul className="gx-sub">
+                        <li>
+                          <a
+                            href="javascript:void(0)"
+                            className="gx-struct-drop-under d-flex align-items-end"
+                          >
+                            <i className="ri-arrow-down-s-line gx-arrow"></i>
+                            <i className="ri-file-text-line"></i>
+                            Step 1: Register or Log In
+                          </a>
+                          <ul className="gx-sub-under">
+                            <li>
+                              <i className="ri-information-line"></i>
+                              Create your account or log in to access TalkRight.
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li>
+                          <a
+                            href="javascript:void(0)"
+                            className="gx-struct-drop-under d-flex align-items-end"
+                          >
+                            <i className="ri-arrow-down-s-line gx-arrow"></i>
+                            <i className="ri-file-text-line"></i>
+                            Step 2: Add Departments & Doctors from Doctor
+                            Management System
+                          </a>
+                          <ul className="gx-sub-under">
+                            <li>
+                              <i className="ri-information-line"></i>Add all
+                              required departments to organize medical
+                              specialties.
+                            </li>
+                            <li>
+                              <i className="ri-information-line"></i>SAdd
+                              doctors under their respective departments.
+                            </li>
+                            <li>
+                              <i className="ri-information-line"></i>Define each
+                              doctor’s shift timings and leave schedules to
+                              maintain accurate availability and appointment
+                              flow.
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li>
+                          <a
+                            href="javascript:void(0)"
+                            className="gx-struct-drop-under d-flex align-items-end"
+                          >
+                            <i className="ri-arrow-down-s-line gx-arrow"></i>
+                            <i className="ri-file-text-line"></i>
+                            Step 3: Set Templates from Template Management
+                          </a>
+                          <ul className="gx-sub-under">
+                            <li>
+                              <i className="ri-information-line"></i>To create
+                              and manage Email, WhatsApp, and Poll templates for
+                              automated communication, choose the template type:
+                              Email (confirmations), WhatsApp
+                              (reminders/bookings), or Poll (feedback) and then
+                              edit the provided templates according to own
+                              requirements
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li>
+                          <a
+                            href="javascript:void(0)"
+                            className="gx-struct-drop-under d-flex align-items-end"
+                          >
+                            <i className="ri-arrow-down-s-line gx-arrow"></i>
+                            <i className="ri-file-text-line"></i>
+                            Step 4: Book Appointment from Appointments
+                          </a>
+                          <ul className="gx-sub-under">
+                            <li>
+                              <i className="ri-information-line"></i>Before
+                              booking the first appointment, you will have to
+                              purchase a Twilio number from Billing.
+                            </li>
+                            <li>
+                              <i className="ri-information-line"></i> Select a
+                              date and time, provide the required information
+                              then confirm your booking.
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* -------------------- */}
+
+                <div className="file-structure">
+                  <ul className="gx-main-structure">
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        className="gx-struct-drop d-flex align-items-end"
+                      >
+                        <i className="ri-arrow-down-s-line gx-arrow"></i>
                         <i
                           className="material-symbols-outlined"
                           style={{ fontSize: "25px", marginLeft: "3px" }}
@@ -497,7 +622,7 @@ export default function Home() {
                             href="javascript:void(0)"
                             className="gx-struct-drop-under d-flex align-items-end"
                           >
-                            <i className="ri-arrow-up-s-line"></i>
+                            <i className="ri-arrow-down-s-line gx-arrow"></i>
                             <i
                               className="material-symbols-outlined"
                               style={{ fontSize: "23px", marginRight: "9px" }}
@@ -545,7 +670,7 @@ export default function Home() {
                             href="javascript:void(0)"
                             className="gx-struct-drop-under d-flex align-items-end"
                           >
-                            <i className="ri-arrow-up-s-line "></i>
+                            <i className="ri-arrow-down-s-line gx-arrow"></i>
                             <i
                               className="material-symbols-outlined"
                               style={{ fontSize: "23px", marginRight: "9px" }}
@@ -590,7 +715,7 @@ export default function Home() {
                             href="javascript:void(0)"
                             className="gx-struct-drop-under d-flex align-items-end"
                           >
-                            <i className="ri-arrow-up-s-line"></i>
+                            <i className="ri-arrow-down-s-line gx-arrow"></i>
                             <i
                               className="material-symbols-outlined"
                               style={{ fontSize: "23px", marginRight: "9px" }}
@@ -737,7 +862,7 @@ export default function Home() {
                 <div className="file-customization">
                   <ul>
                     <li>
-                      <strong>Dashboard:</strong>
+                      <strong>Dashboard: </strong>
                       The TalkRight dashboard gives hospital administrators a
                       clear and organized overview of daily operations. It
                       displays key insights such as total calls, today’s calls,
@@ -747,7 +872,7 @@ export default function Home() {
                       progress and maintain efficiency.
                     </li>
                     <li>
-                      <strong>Calendar:</strong>
+                      <strong>Calendar: </strong>
                       The Calendar allows hospital staff to manually book
                       appointments based on patient needs. It offers flexibility
                       to select doctors and departments according to their shift
@@ -756,7 +881,7 @@ export default function Home() {
                       or delete bookings whenever required.
                     </li>
                     <li>
-                      <strong>Appointments:</strong>
+                      <strong>Appointments: </strong>
                       Appointments: This section provides a structured view of
                       all patient appointments. Hospital staff can easily
                       monitor and filter appointments by status (confirmed,
@@ -766,7 +891,7 @@ export default function Home() {
                       quick access and organization.
                     </li>
                     <li>
-                      <strong>Incoming Calls:</strong>
+                      <strong>Incoming Calls: </strong>
                       This section maintains a detailed log of all incoming
                       calls. It records who made the call, which staff member or
                       agent received it, and all relevant contact information,
@@ -774,21 +899,21 @@ export default function Home() {
                       easily accessible.
                     </li>
                     <li>
-                      <strong>Reviews:</strong>
+                      <strong>Reviews: </strong>
                       The Reviews section compiles feedback from both surveys
                       and call interactions. It helps hospital management
                       evaluate patient satisfaction levels and identify areas
                       for improvement in service quality and communication.
                     </li>
                     <li>
-                      <strong>Report:</strong>
+                      <strong>Report: </strong>
                       This section contains all generated reports, showing who
                       created them and their details. It keeps records
                       well-organized and readily available, enabling quick
                       review and effective tracking of operational activities.
                     </li>
                     <li>
-                      <strong>Doctor Management:</strong>
+                      <strong>Doctor Management: </strong>
                       Doctor Management provides complete details about doctors,
                       their departments, and shift schedules. It allows staff to
                       add doctors under specific departments and manage their
@@ -796,14 +921,14 @@ export default function Home() {
                       for better coordination and planning.
                     </li>
                     <li>
-                      <strong>Clinic Management:</strong>
+                      <strong>Clinic Management: </strong>
                       This section manages the clinic’s operational schedule,
                       including fixed weekly off-days and occasional leaves. It
                       helps staff stay informed about clinic availability and
                       ensures accurate appointment scheduling.
                     </li>
                     <li>
-                      <strong>Billing:</strong>
+                      <strong>Billing: </strong>
                       The Billing section displays information about
                       subscription packages and purchase history including the
                       active package, its duration, and total subscriptions to
@@ -814,11 +939,11 @@ export default function Home() {
                       renewals only require choosing the desired package.
                     </li>
                     <li>
-                      <strong>Template Management:</strong>
+                      <strong>Template Management: </strong>
                       Template Management enables hospital staff to manage and
                       edit
-                      <strong>Email</strong>, <strong>WhatsApp</strong>, and{" "}
-                      <strong>Poll</strong>
+                      <strong> Email</strong>, <strong>WhatsApp</strong>, and{" "}
+                      <strong>Poll </strong>
                       templates for patient communication. Predefined WhatsApp
                       and Poll templates are provided for convenience and can be
                       customized to match hospital requirements, ensuring
@@ -826,7 +951,7 @@ export default function Home() {
                       reminders, and feedback.
                     </li>
                     <li>
-                      <strong>System Settings:</strong>
+                      <strong>System Settings: </strong>
                       This section provides access to all essential system
                       configurations. You can manage notification intervals
                       (deciding which notifications are sent and when), set up
@@ -838,7 +963,7 @@ export default function Home() {
                       experience.
                     </li>
                     <li>
-                      <strong>Profile Menu:</strong>
+                      <strong>Profile Menu: </strong>
                       The Profile Menu provides quick access to all
                       account-related settings and personal information. It
                       allows users to view their profile, update personal and

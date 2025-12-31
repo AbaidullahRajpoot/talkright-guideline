@@ -146,27 +146,46 @@ document.addEventListener("click", (e) => {
 // ------------------------- File Structure Dropdowns (gx-struct-drop levels)
 function handleStructDropdown(selector, subClass) {
   document.addEventListener("click", (e) => {
-    if (e.target.closest(selector)) {
-      const btn = e.target.closest(selector);
-      const subMenu = btn.parentElement.querySelector(subClass);
-      if (!subMenu) return;
-      const isOpen = subMenu.classList.contains("show");
+    const btn = e.target.closest(selector);
+    if (!btn) return;
 
-      document.querySelectorAll(subClass + ".show").forEach((menu) => {
+    const subMenu = btn.parentElement.querySelector(subClass);
+    if (!subMenu) return;
+
+    const arrow = btn.querySelector(".gx-arrow");
+    const isOpen = subMenu.classList.contains("show");
+
+    // 🔒 Close ONLY sibling <li> accordions
+    const parentLi = btn.closest("li");
+
+    parentLi.parentElement
+      .querySelectorAll(":scope > li > " + subClass + ".show")
+      .forEach((menu) => {
+        if (menu === subMenu) return;
+
         menu.style.opacity = "0";
         menu.style.transform = "translateY(-20px)";
         menu.style.maxHeight = "0";
         menu.classList.remove("show");
+
+        const openArrow = menu.parentElement.querySelector(".gx-arrow");
+        if (openArrow) openArrow.classList.remove("rotate");
       });
 
-      if (!isOpen) {
-        setTimeout(() => {
-          subMenu.classList.add("show");
-          subMenu.style.opacity = "1";
-          subMenu.style.transform = "translateY(0)";
-          subMenu.style.maxHeight = subMenu.scrollHeight + "px";
-        }, 10);
-      }
+    // Toggle current
+    if (!isOpen) {
+      setTimeout(() => {
+        subMenu.classList.add("show");
+        subMenu.style.opacity = "1";
+        subMenu.style.transform = "translateY(0)";
+        subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+
+        if (arrow) arrow.classList.add("rotate");
+      }, 10);
+    } else {
+      subMenu.classList.remove("show");
+      subMenu.style.maxHeight = "0";
+      if (arrow) arrow.classList.remove("rotate");
     }
   });
 }

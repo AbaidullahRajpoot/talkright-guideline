@@ -3,6 +3,7 @@ import Header from "./components/header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "remixicon/fonts/remixicon.css";
 import "./globals.css";
+
 // import "bootstrap/dist/js/bootstrap.min.js";
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "TalkRight",
+  title: "TalkRight Documentation",
   description:
     "Explore the TalkRight User Guide, your complete, professional walkthrough for mastering clinic management. This guide provides clear, step-by-step instructions to help you streamline appointments, automate reminders, manage billing, customize templates, and integrate WhatsApp seamlessly. Enhance operational efficiency and communication precision with TalkRight’s all-in-one smart system.",
 };
