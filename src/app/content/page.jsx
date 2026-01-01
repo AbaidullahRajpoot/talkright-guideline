@@ -6470,16 +6470,17 @@ const page = () => {
                       >
                         <div className="d-md-flex justify-content-md-between col-9 ">
                           <div className="col-12 col-md-11 col-lg-7 pb-lg-5">
-                            <p>
+                            <p className="mb-2">
                               <strong>How to Use It:</strong>
                             </p>
+                            <strong>How to Use of Email Config:</strong>
                             <ul className="lists steps ">
                               <li data-target="4" className="cursor-pointer">
                                 Click <strong>Add Email Config</strong> to
                                 create a new configuration.
                                 <div>
                                   <img
-                                    src="./assets/image/content/logo-setting-img.png"
+                                    src="./assets/image/content/add-email-config.png"
                                     className="mobile-step-img"
                                     style={{ objectFit: "contain" }}
                                   />
@@ -6489,71 +6490,119 @@ const page = () => {
                                 Enter your email address in the email field.
                                 <div>
                                   <img
-                                    src="assets/image/content/dragbox.png"
+                                    src="assets/image/content/enter-email.png"
                                     className="mobile-step-img"
                                     style={{ objectFit: "contain" }}
                                   />
                                 </div>
                               </li>
 
-                              <strong>
-                                Google App Password Setup (Gmail Users):
-                              </strong>
-                              <p>
-                                Click your profile icon (top right) and open
+                              <li data-target="3" className="cursor-pointer">
+                                <strong>
+                                  Google App Password Setup (Gmail Users):
+                                </strong>
+                                <div>
+                                  <img
+                                    src="assets/image/content/google-app-setup.png"
+                                    className="mobile-step-img"
+                                    style={{ objectFit: "contain" }}
+                                  />
+                                </div>
+                              </li>
+                              <li data-target="5" className="cursor-pointer">
+                                Click your profile icon (top right) and open{" "}
                                 <strong>Manage Your Google Account</strong>.
-                              </p>
-                              <p>
+                                <div>
+                                  <img
+                                    src="assets/image/content/profile-hide.png"
+                                    className="mobile-step-img"
+                                    style={{ objectFit: "contain" }}
+                                  />
+                                </div>
+                              </li>
+
+                              <li data-target="6" className="cursor-pointer">
                                 Go to <strong>Security</strong> and enable{" "}
                                 <strong>2-Step Verification</strong>.
-                              </p>
-                              <ul>
-                                <li data-target="3" className="cursor-pointer">
-                                  Open <strong>App Passwords</strong>, add your
-                                  app name, and generate the password.
-                                  <div>
-                                    <img
-                                      src="assets/image/content/LightDark.png"
-                                      className="mobile-step-img"
-                                      style={{ objectFit: "contain" }}
-                                    />
-                                  </div>
-                                </li>
-                                <li data-target="3" className="cursor-pointer">
-                                  Copy the generated App Password.
-                                  <div>
-                                    <img
-                                      src="assets/image/content/LightDark.png"
-                                      className="mobile-step-img"
-                                      style={{ objectFit: "contain" }}
-                                    />
-                                  </div>
-                                </li>
-                              </ul>
+                                <div>
+                                  <img
+                                    src="assets/image/content/step-verification.png"
+                                    className="mobile-step-img"
+                                    style={{ objectFit: "contain" }}
+                                  />
+                                </div>
+                                <ul>
+                                  <li
+                                    data-target="7"
+                                    className="cursor-pointer"
+                                  >
+                                    Search <strong>App Passwords</strong>, add
+                                    your app name, and generate the password.
+                                    <div>
+                                      <img
+                                        src="assets/image/content/open-app-password.png"
+                                        className="mobile-step-img"
+                                        style={{ objectFit: "contain" }}
+                                      />
+                                    </div>
+                                  </li>
+                                  <li
+                                    data-target="8"
+                                    className="cursor-pointer"
+                                  >
+                                    Copy the generated App Password before
+                                    confirming.
+                                    <div>
+                                      <img
+                                        src="assets/image/content/passcode.png"
+                                        className="mobile-step-img"
+                                        style={{ objectFit: "contain" }}
+                                      />
+                                    </div>
+                                  </li>
+                                </ul>
+                              </li>
 
                               <strong>Complete Email Configuration: </strong>
-                              <p>
+
+                              <li data-target="9" className="cursor-pointer">
                                 Paste the App Password into the password field.
-                              </p>
-                              <p>
+                                <div>
+                                  <img
+                                    src="assets/image/content/paste-password.png"
+                                    className="mobile-step-img"
+                                    style={{ objectFit: "contain" }}
+                                  />
+                                </div>
+                              </li>
+
+                              <li data-target="10" className="cursor-pointer">
                                 Add the <strong>SMTP host</strong>, select the{" "}
                                 <strong>Port</strong>, and choose your{" "}
                                 <strong>Email Service Provider</strong>.
-                              </p>
+                                <div>
+                                  <img
+                                    src="assets/image/content/port-img.png"
+                                    className="mobile-step-img"
+                                    style={{ objectFit: "contain" }}
+                                  />
+                                </div>
+                              </li>
+
                               <ul className="lists steps  ">
-                                <li data-target="3" className="cursor-pointer">
+                                <li data-target="11" className="cursor-pointer">
                                   Click <strong>Save</strong> to complete the
                                   setup.
                                   <div>
                                     <img
-                                      src="assets/image/content/LightDark.png"
+                                      src="assets/image/content/email-save.png"
                                       className="mobile-step-img"
                                       style={{ objectFit: "contain" }}
                                     />
                                   </div>
                                 </li>
 
-                                <li data-target="3" className="cursor-pointer">
+                                <li data-target="4" className="cursor-pointer">
                                   Once configured, all email notifications and
                                   reminders will be sent from your email
                                   address.
@@ -6578,21 +6627,66 @@ const page = () => {
                               </div>
                               <div>
                                 <img
-                                  src="assets/image/content/dragbox.png"
+                                  src="assets/image/content/enter-email.png"
+                                  style={{ objectFit: "contain" }}
+                                  alt=""
+                                />
+                              </div>
+
+                              <div>
+                                <img
+                                  src="assets/image/content/google-app-setup.png"
                                   style={{ objectFit: "contain" }}
                                   alt=""
                                 />
                               </div>
                               <div>
                                 <img
-                                  src="assets/image/content/LightDark.png"
+                                  src="assets/image/content/add-email-config.png"
                                   style={{ objectFit: "contain" }}
-                                  alt=""
+                                />
+                              </div>
+
+                              <div>
+                                <img
+                                  src="assets/image/content/profile-hide.png"
+                                  style={{ objectFit: "contain" }}
                                 />
                               </div>
                               <div>
                                 <img
-                                  src="assets/image/content/logo-setting-img.png"
+                                  src="assets/image/content/step-verification.png"
+                                  style={{ objectFit: "contain" }}
+                                />
+                              </div>
+                              <div>
+                                <img
+                                  src="assets/image/content/open-app-password.png"
+                                  style={{ objectFit: "contain" }}
+                                />
+                              </div>
+
+                              <div>
+                                <img
+                                  src="assets/image/content/passcode.png"
+                                  style={{ objectFit: "contain" }}
+                                />
+                              </div>
+                              <div>
+                                <img
+                                  src="assets/image/content/paste-password.png"
+                                  style={{ objectFit: "contain" }}
+                                />
+                              </div>
+                              <div>
+                                <img
+                                  src="assets/image/content/port-img.png"
+                                  style={{ objectFit: "contain" }}
+                                />
+                              </div>
+                              <div>
+                                <img
+                                  src="assets/image/content/email-save.png"
                                   style={{ objectFit: "contain" }}
                                 />
                               </div>
