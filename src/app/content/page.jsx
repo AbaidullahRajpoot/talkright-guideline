@@ -6631,10 +6631,17 @@ const page = () => {
                                   </div>
                                 </li>
 
-                                <li className="cursor-pointer">
+                                <li data-target="12" className="cursor-pointer">
                                   Once configured, all email notifications and
                                   reminders will be sent from your email
                                   address.
+                                  <div>
+                                    <img
+                                      src="assets/image/content/once.png"
+                                      className="mobile-step-img"
+                                      style={{ objectFit: "contain" }}
+                                    />
+                                  </div>
                                 </li>
                               </ul>
                             </ul>
@@ -6709,6 +6716,12 @@ const page = () => {
                               <div>
                                 <img
                                   src="assets/image/content/email-save.PNG"
+                                  style={{ objectFit: "contain" }}
+                                />
+                              </div>
+                              <div>
+                                <img
+                                  src="assets/image/content/once.png"
                                   style={{ objectFit: "contain" }}
                                 />
                               </div>
