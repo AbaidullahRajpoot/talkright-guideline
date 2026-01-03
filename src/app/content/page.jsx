@@ -6528,7 +6528,7 @@ const page = () => {
                                   Google App Password Setup (Gmail Users):
                                 </strong>
                                 <div>
-                                  <img
+                                  <img------
                                     src="assets/image/content/google-app-setup.png"
                                     className="mobile-step-img"
                                     style={{ objectFit: "contain" }}
