@@ -6354,18 +6354,18 @@ const page = () => {
                     <h2 className="mt-5">Email Configuration</h2>
                     <ul
                       className="nav nav-tabs mt-3"
-                      id="logoTab"
+                      id="email-config-tab"
                       role="tablist"
                     >
                       <li className="nav-item" role="presentation">
                         <button
                           className="nav-link active"
-                          id="logo-preview-tab"
+                          id="email-config-preview-tab"
                           data-bs-toggle="tab"
-                          data-bs-target="#logo-preview"
+                          data-bs-target="#emailConfig-preview"
                           type="button"
                           role="tab"
-                          aria-controls="logo-preview"
+                          aria-controls="email-config-preview"
                           aria-selected="true"
                         >
                           <i className="ri-eye-line"></i>Preview
@@ -6374,12 +6374,12 @@ const page = () => {
                       <li className="nav-item" role="presentation">
                         <button
                           className="nav-link"
-                          id="logo-usage-tab"
+                          id="email-config-usage-tab"
                           data-bs-toggle="tab"
-                          data-bs-target="#logo-usage"
+                          data-bs-target="#email-config-usage"
                           type="button"
                           role="tab"
-                          aria-controls="logo-usage"
+                          aria-controls="email-config-usage"
                           aria-selected="false"
                         >
                           <span className="material-symbols-outlined">
@@ -6391,12 +6391,12 @@ const page = () => {
                       <li className="nav-item" role="presentation">
                         <button
                           className="nav-link"
-                          id="logo-how-tab"
+                          id="email-config-tab"
                           data-bs-toggle="tab"
-                          data-bs-target="#logo-how"
+                          data-bs-target="#email-config"
                           type="button"
                           role="tab"
-                          aria-controls="logo-how"
+                          aria-controls="email-config"
                           aria-selected="false"
                         >
                           <span className="material-symbols-outlined">
@@ -6409,13 +6409,13 @@ const page = () => {
 
                     <div
                       className="tab-content second-content"
-                      id="logoTabContent"
+                      id="emailConfigContent"
                     >
                       <div
                         className="tab-pane fade show active"
-                        id="logo-preview"
+                        id="email-config-preview"
                         role="tabpanel"
-                        aria-labelledby="logo-preview-tab"
+                        aria-labelledby="email-config-preview-tab"
                       >
                         <img
                           src="./assets/image/content/email-config-setting.png"
@@ -6425,62 +6425,81 @@ const page = () => {
                       {/*✅ 6. Logo Settings Section */}
                       <div
                         className="tab-pane fade"
-                        id="logo-usage"
+                        id="email-config-usage"
                         role="tabpanel"
-                        aria-labelledby="logo-usage-tab"
+                        aria-labelledby="email-config-tab"
                       >
                         <p>
                           <strong>What it is:</strong>
                         </p>
                         <p>
-                          The <strong>Logo Settings</strong> section allows you
-                          to manage your system’s branding by uploading logos
-                          for both <strong>Light Mode</strong> and{" "}
-                          <strong>Dark Mode</strong>. Your uploaded logo will be
-                          displayed above the sidebar menu for consistent brand
-                          visibility.
+                          The Email Configuration section allows the system to
+                          send emails using the user’s own email address. It
+                          enables automated email communication such as
+                          appointment confirmations, reminders, follow-ups, and
+                          system notifications, ensuring reliable and
+                          personalized email delivery.
                         </p>
                         <p>
                           <strong>Description:</strong>
                         </p>
                         <ul className="lists">
                           <li>
-                            Upload different logos for{" "}
-                            <strong>Light Mode</strong> and{" "}
-                            <strong>Dark Mode</strong> to match the system
-                            theme.
+                            Displays all existing email configurations with key
+                            details such as Email Address, Status, and available
+                            Actions.
                           </li>
                           <li>
-                            Supports <strong>drag-and-drop</strong> or{" "}
-                            <strong>click-to-upload</strong> functionality for
-                            easy logo management.
+                            Allows the user to add a new configuration using the{" "}
+                            <strong>Add Email Config</strong> button.
                           </li>
                           <li>
-                            Helps maintain <strong>consistent</strong> and{" "}
-                            <strong>professional branding</strong>
-                            across the entire application interface.
+                            Requires entering valid email credentials, including
+                            the email address, App Password, SMTP host, port,
+                            and email service provider.
+                            <ul className="lists">
+                              <li>
+                                For Gmail users,{" "}
+                                <strong>2-Step Verification</strong> must be
+                                enabled, and an <strong>App Password</strong>{" "}
+                                must be generated from{" "}
+                                <strong>Manage Your Google Account</strong> →
+                                <strong>Security</strong> →{" "}
+                                <strong>App Passwords</strong>.
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            Once configured, all system emails will be sent from
+                            the user’s own email address.
+                          </li>
+                          <li>
+                            f the email configuration is removed or disabled,
+                            automated emails will no longer be sent from the
+                            user’s email address and will instead be sent from{" "}
+                            <strong>TalkRight’s default email</strong>.
                           </li>
                         </ul>
                       </div>
                       <div
                         className="tab-pane fade how-to-use  "
-                        id="logo-how"
+                        id="email-config"
                         role="tabpanel"
-                        aria-labelledby="logo-how-tab"
+                        aria-labelledby="email-config-tab"
                       >
                         <div className="d-md-flex justify-content-md-between col-9 ">
                           <div className="col-12 col-md-11 col-lg-7 pb-lg-5">
                             <p className="mb-2">
                               <strong>How to Use It:</strong>
                             </p>
-                            <strong>How to Use of Email Config:</strong>
+
                             <ul className="lists steps ">
                               <li data-target="4" className="cursor-pointer">
                                 Click <strong>Add Email Config</strong> to
                                 create a new configuration.
                                 <div>
                                   <img
-                                    src="./assets/image/content/add-email-config.png"
+                                    src="./assets/image/content/add-email-config.PNG"
                                     className="mobile-step-img"
                                     style={{ objectFit: "contain" }}
                                   />
@@ -6490,14 +6509,21 @@ const page = () => {
                                 Enter your email address in the email field.
                                 <div>
                                   <img
-                                    src="assets/image/content/enter-email.png"
+                                    src="assets/image/content/enter-email.PNG"
                                     className="mobile-step-img"
                                     style={{ objectFit: "contain" }}
                                   />
                                 </div>
                               </li>
 
-                              <li data-target="3" className="cursor-pointer">
+                              <p>
+                                {" "}
+                                <strong>
+                                  Google App Password Setup (Gmail Users):
+                                </strong>
+                              </p>
+
+                              {/* <li data-target="3" className="cursor-pointer">
                                 <strong>
                                   Google App Password Setup (Gmail Users):
                                 </strong>
@@ -6508,7 +6534,7 @@ const page = () => {
                                     style={{ objectFit: "contain" }}
                                   />
                                 </div>
-                              </li>
+                              </li> */}
                               <li data-target="5" className="cursor-pointer">
                                 Click your profile icon (top right) and open{" "}
                                 <strong>Manage Your Google Account</strong>.
@@ -6563,13 +6589,16 @@ const page = () => {
                                 </ul>
                               </li>
 
-                              <strong>Complete Email Configuration: </strong>
+                              <p>
+                                {" "}
+                                <strong>Complete Email Configuration: </strong>
+                              </p>
 
                               <li data-target="9" className="cursor-pointer">
                                 Paste the App Password into the password field.
                                 <div>
                                   <img
-                                    src="assets/image/content/paste-password.png"
+                                    src="assets/image/content/paste-password.PNG"
                                     className="mobile-step-img"
                                     style={{ objectFit: "contain" }}
                                   />
@@ -6582,7 +6611,7 @@ const page = () => {
                                 <strong>Email Service Provider</strong>.
                                 <div>
                                   <img
-                                    src="assets/image/content/port-img.png"
+                                    src="assets/image/content/port-img.PNG"
                                     className="mobile-step-img"
                                     style={{ objectFit: "contain" }}
                                   />
@@ -6595,24 +6624,17 @@ const page = () => {
                                   setup.
                                   <div>
                                     <img
-                                      src="assets/image/content/email-save.png"
+                                      src="assets/image/content/email-save.PNG"
                                       className="mobile-step-img"
                                       style={{ objectFit: "contain" }}
                                     />
                                   </div>
                                 </li>
 
-                                <li data-target="4" className="cursor-pointer">
+                                <li className="cursor-pointer">
                                   Once configured, all email notifications and
                                   reminders will be sent from your email
                                   address.
-                                  <div>
-                                    <img
-                                      src="assets/image/content/LightDark.png"
-                                      className="mobile-step-img"
-                                      style={{ objectFit: "contain" }}
-                                    />
-                                  </div>
                                 </li>
                               </ul>
                             </ul>
@@ -6627,7 +6649,7 @@ const page = () => {
                               </div>
                               <div>
                                 <img
-                                  src="assets/image/content/enter-email.png"
+                                  src="assets/image/content/enter-email.PNG"
                                   style={{ objectFit: "contain" }}
                                   alt=""
                                 />
@@ -6635,14 +6657,14 @@ const page = () => {
 
                               <div>
                                 <img
-                                  src="assets/image/content/google-app-setup.png"
+                                  src="assets/image/content/google-app-setup.PNG"
                                   style={{ objectFit: "contain" }}
                                   alt=""
                                 />
                               </div>
                               <div>
                                 <img
-                                  src="assets/image/content/add-email-config.png"
+                                  src="assets/image/content/add-email-config.PNG"
                                   style={{ objectFit: "contain" }}
                                 />
                               </div>
@@ -6674,19 +6696,19 @@ const page = () => {
                               </div>
                               <div>
                                 <img
-                                  src="assets/image/content/paste-password.png"
+                                  src="assets/image/content/paste-password.PNG"
                                   style={{ objectFit: "contain" }}
                                 />
                               </div>
                               <div>
                                 <img
-                                  src="assets/image/content/port-img.png"
+                                  src="assets/image/content/port-img.PNG"
                                   style={{ objectFit: "contain" }}
                                 />
                               </div>
                               <div>
                                 <img
-                                  src="assets/image/content/email-save.png"
+                                  src="assets/image/content/email-save.PNG"
                                   style={{ objectFit: "contain" }}
                                 />
                               </div>
