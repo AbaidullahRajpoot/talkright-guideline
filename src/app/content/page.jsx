@@ -6531,7 +6531,7 @@ const page = () => {
                                   <img------
                                     src="assets/image/content/google-app-setup.png"
                                     className="mobile-step-img"
-                                    style={{ objectFit: "contain" }}-----------
+                                    style={{ objectFit: "contain" }}---------------
                                   />
                                 </div>
                               </li> */}
