@@ -6353,27 +6353,27 @@ const page = () => {
 
                     <h2 className="mt-5">Email Configuration</h2>
                     <ul
-                      className="nav nav-tabs mt-3"
+                      class="nav nav-tabs mt-3"
                       id="email-config-tab"
                       role="tablist"
                     >
-                      <li className="nav-item" role="presentation">
+                      <li class="nav-item" role="presentation">
                         <button
-                          className="nav-link active"
+                          class="nav-link active"
                           id="email-config-preview-tab"
                           data-bs-toggle="tab"
-                          data-bs-target="#emailConfig-preview"
+                          data-bs-target="#email-config-preview"
                           type="button"
                           role="tab"
                           aria-controls="email-config-preview"
                           aria-selected="true"
                         >
-                          <i className="ri-eye-line"></i>Preview
+                          <i class="ri-eye-line"></i> Preview
                         </button>
                       </li>
-                      <li className="nav-item" role="presentation">
+                      <li class="nav-item" role="presentation">
                         <button
-                          className="nav-link"
+                          class="nav-link"
                           id="email-config-usage-tab"
                           data-bs-toggle="tab"
                           data-bs-target="#email-config-usage"
@@ -6382,52 +6382,49 @@ const page = () => {
                           aria-controls="email-config-usage"
                           aria-selected="false"
                         >
-                          <span className="material-symbols-outlined">
-                            build
-                          </span>
+                          <span class="material-symbols-outlined">build</span>{" "}
                           Usage
                         </button>
                       </li>
-                      <li className="nav-item" role="presentation">
+                      <li class="nav-item" role="presentation">
                         <button
-                          className="nav-link"
-                          id="email-config-tab"
+                          class="nav-link"
+                          id="email-config-howto-tab"
                           data-bs-toggle="tab"
-                          data-bs-target="#email-config"
+                          data-bs-target="#email-config-howto"
                           type="button"
                           role="tab"
-                          aria-controls="email-config"
+                          aria-controls="email-config-howto"
                           aria-selected="false"
                         >
-                          <span className="material-symbols-outlined">
+                          <span class="material-symbols-outlined">
                             menu_book
-                          </span>
+                          </span>{" "}
                           How to Use
                         </button>
                       </li>
                     </ul>
-
                     <div
-                      className="tab-content second-content"
+                      class="tab-content second-content"
                       id="emailConfigContent"
                     >
                       <div
-                        className="tab-pane fade show active"
+                        class="tab-pane fade show active"
                         id="email-config-preview"
                         role="tabpanel"
                         aria-labelledby="email-config-preview-tab"
                       >
                         <img
                           src="./assets/image/content/email-config-setting.png"
-                          alt="Logo Settings Preview"
+                          alt="Email Config Preview"
                         />
                       </div>
                       {/*✅ 6. Logo Settings Section */}
                       <div
-                        className="tab-pane fade"
+                        class="tab-pane fade"
                         id="email-config-usage"
                         role="tabpanel"
-                        aria-labelledby="email-config-tab"
+                        aria-labelledby="email-config-usage-tab"
                       >
                         <p>
                           <strong>What it is:</strong>
@@ -6482,10 +6479,10 @@ const page = () => {
                         </ul>
                       </div>
                       <div
-                        className="tab-pane fade how-to-use  "
-                        id="email-config"
+                        class="tab-pane fade how-to-use"
+                        id="email-config-howto"
                         role="tabpanel"
-                        aria-labelledby="email-config-tab"
+                        aria-labelledby="email-config-howto-tab"
                       >
                         <div className="d-md-flex justify-content-md-between col-9 ">
                           <div className="col-12 col-md-11 col-lg-7 pb-lg-5">
