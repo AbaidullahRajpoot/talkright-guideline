@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Sidebar from "./components/sidebar";
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
         <p className="main-title-right">Getting Started</p>
         <ul className="right-top-ul">
           <li className="right-top-li">
-            <a href="index.html">TalkRight</a>
+            <Link href="/">TalkRight</Link>
           </li>
           <li className="right-top-li">Getting Started</li>
         </ul>
