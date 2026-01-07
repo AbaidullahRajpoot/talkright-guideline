@@ -4170,14 +4170,305 @@ const page = () => {
               <div className="intero">
                 <h1>Clinic Management</h1>
                 <p className="popins-data-helpex">
-                  The Clinic Management section allows you to efficiently manage
-                  clinic off days. It includes both
-                  <strong>permanent day-offs</strong> (regular weekly closures)
-                  and <strong>random day-offs</strong> (occasional leaves such
-                  as public holidays or special events). You can easily{" "}
-                  <strong>add, view, or delete</strong> leave records as needed
-                  to keep clinic operations organized and up to date.
+                  The Clinic Management section allows administrators to manage
+                  clinic-related operations. It includes clinic timings, where
+                  available working days and start and end times can be defined
+                  to ensure appointments are scheduled only within operational
+                  hours. Clinics can also manage permanent and random day-offs
+                  to reflect actual availability. This section supports
+                  efficient scheduling and helps maintain smooth day-to-day
+                  clinic operations.
                 </p>
+
+                {/* --------------------------Clinic Timing---------------------------------------- */}
+
+                <h4 className="mt-4">Clinic Timing</h4>
+                <ul className="nav nav-tabs mt-3" id="permTab" role="tablist">
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link active"
+                      id="clinic-Timing-preview-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#clinic-Timing-preview"
+                      type="button"
+                      role="tab"
+                      aria-controls="clinic-Timing-preview"
+                      aria-selected="true"
+                    >
+                      <i className="ri-eye-line"></i>Preview
+                    </button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link"
+                      id="clinic-Timing-usage-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#clinic-Timing-usage"
+                      type="button"
+                      role="tab"
+                      aria-controls="clinic-Timing-usage"
+                      aria-selected="false"
+                    >
+                      <span className="material-symbols-outlined">build</span>
+                      Usage
+                    </button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link"
+                      id="clinic-Timing-how-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#clinic-Timing-how"
+                      type="button"
+                      role="tab"
+                      aria-controls="clinic-Timing-how"
+                      aria-selected="false"
+                    >
+                      <span className="material-symbols-outlined">
+                        menu_book
+                      </span>
+                      How to Use
+                    </button>
+                  </li>
+                </ul>
+
+                <div className="tab-content second-content" id="permTabContent">
+                  <div
+                    className="tab-pane fade show active"
+                    id="clinic-Timing-preview"
+                    role="tabpanel"
+                    aria-labelledby="clinic-Timing-preview-tab"
+                  >
+                    <img
+                      src="./assets/image/content/center-timings.png"
+                      alt="Permanent Day-Off Preview"
+                    />
+                  </div>
+                  {/*Permanent Day Off: What it is */}
+                  <div
+                    className="tab-pane fade"
+                    id="clinic-Timing-usage"
+                    role="tabpanel"
+                    aria-labelledby="clinic-Timing-usage-tab"
+                  >
+                    <p>
+                      <strong>What it is:</strong>
+                    </p>
+                    <p>
+                      The <strong>Clinic Timing</strong> section allows you to
+                      define the clinic’s working schedule by setting available
+                      days along with their opening and closing times. This
+                      ensures appointments are booked only within approved
+                      operating hours and prevents scheduling on unavailable
+                      days.
+                    </p>
+
+                    <p>
+                      <strong>Description:</strong>
+                    </p>
+                    <ul className="lists">
+                      <li>
+                        Allows users to add clinic timings by selecting a day
+                        and specifying the opening and closing time.
+                      </li>
+                      <li>
+                        Each day can be added only once; duplicate days are not
+                        allowed.
+                      </li>
+                      <li>
+                        All configured days and their timings are displayed
+                        under <strong>Center Timings</strong> for easy
+                        reference.
+                      </li>
+                      <li>
+                        Users can view all available days and their respective
+                        timings in a structured list.
+                      </li>
+                      <li>
+                        Supports searching based on available day and time.
+                      </li>
+                      <li>
+                        Enables sorting by Serial Number (#), Available Day,
+                        Start Time, and End Time.
+                      </li>
+                      <li>
+                        Provides edit functionality to update the timing of any
+                        available day as required.
+                      </li>
+                      <li>
+                        Pagination appears automatically when multiple records
+                        are available.
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/*Clinic Timing: How to Use */}
+                  <div
+                    className="tab-pane fade"
+                    id="clinic-Timing-how"
+                    role="tabpanel"
+                    aria-labelledby="clinic-Timing-how-tab"
+                  >
+                    <div className="d-md-flex justify-content-md-between col-md-10 col-11  ">
+                      <div className="col-12 col-md-11 col-lg-7  ">
+                        <p>
+                          <strong>How to Use:</strong>
+                        </p>
+                        <ul className="lists steps">
+                          <li data-target="8" className="cursor-pointer mb-3">
+                            Open the <strong>Clinic Timing</strong> tab under{" "}
+                            <strong>Clinic Management</strong>.
+                            <div>
+                              <img
+                                src="assets/image/content/perm.png"
+                                className="mobile-step-img"
+                                style={{ objectFit: "contain" }}
+                              />
+                            </div>
+                          </li>
+                          <li data-target="2" className="cursor-pointer mb-3">
+                            Click the <strong>Add Timing</strong> button to
+                            select an available day.
+                            <div>
+                              <img
+                                src="assets/image/content/AddHoliday.png"
+                                className="mobile-step-img"
+                                style={{ objectFit: "contain" }}
+                              />
+                            </div>
+                          </li>
+                          <li data-target="3" className="cursor-pointer mb-3">
+                            Enter the <strong>Start Time</strong> and{" "}
+                            <strong>End Time</strong> for the selected day and
+                            save it.
+                            <div>
+                              <img
+                                src="assets/image/content/holiday.png"
+                                className="mobile-step-img"
+                                style={{ objectFit: "contain" }}
+                              />
+                            </div>
+                          </li>
+                          <li data-target="4" className="cursor-pointer mb-3">
+                            The selected day and its timings will appear under{" "}
+                            <strong>Center Timings</strong>.
+                            <div>
+                              <img
+                                src="assets/image/content/action.png"
+                                className="mobile-step-img"
+                                style={{ objectFit: "contain" }}
+                              />
+                            </div>
+                          </li>
+                          <li data-target="5" className="cursor-pointer mb-3">
+                            Use the <strong>Edit</strong> (pencil icon) to
+                            update the timing of any available day if required.
+                            <div>
+                              <img
+                                src="assets/image/content/delAction.png"
+                                className="mobile-step-img"
+                                style={{ objectFit: "contain" }}
+                              />
+                            </div>
+                          </li>
+                          <li data-target="6" className="cursor-pointer mb-3">
+                            Use the <strong>Search</strong> bar to quickly find
+                            timings based on day or time.
+                            <div>
+                              <img
+                                src="assets/image/content/dayoffSearch.png"
+                                className="mobile-step-img"
+                                style={{ objectFit: "contain" }}
+                              />
+                            </div>
+                          </li>
+                          <li data-target="7" className="cursor-pointer mb-3">
+                            Use the <strong>Sorting</strong> options to arrange
+                            records by Serial Number (#), Available Day, Start
+                            Time, or End Time in ascending or descending order.
+                            <div>
+                              <img
+                                src="assets/image/content/per-leave-sort.PNG"
+                                className="mobile-step-img"
+                                style={{ objectFit: "contain" }}
+                              />
+                            </div>
+                          </li>
+                          <li data-target="1" className="cursor-pointer mb-3">
+                            Use <strong>Pagination</strong> controls to navigate
+                            through additional entries when multiple records
+                            exist.
+                            <div>
+                              <img
+                                src="assets/image/content/pagination.png"
+                                className="mobile-step-img"
+                                style={{ objectFit: "contain" }}
+                              />
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="col-4 ">
+                        <div className="stack ">
+                          <div>
+                            <img
+                              src="assets/image/content/pagination.png"
+                              style={{ objectFit: "contain" }}
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/AddHoliday.png"
+                              style={{ objectFit: "contain" }}
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/holiday.png"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/action.png"
+                              style={{ objectFit: "contain" }}
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/delAction.png"
+                              style={{ objectFit: "contain" }}
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/dayoffSearch.png"
+                              style={{ objectFit: "contain" }}
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/per-leave-sort.PNG"
+                              style={{ objectFit: "contain" }}
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/perm.png"
+                              style={{ objectFit: "contain" }}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* -------------------------------------------------------------------- */}
 
                 <h4 className="mt-4">Permanent Day-Off</h4>
                 <ul className="nav nav-tabs mt-3" id="permTab" role="tablist">
@@ -4325,8 +4616,8 @@ const page = () => {
                             </div>
                           </li>
                           <li data-target="3" className="cursor-pointer mb-3">
-                            The chosen day will automatically apply as a
-                            recurring weekly closure.
+                            The selected day and its timings will appear under
+                            Center Timings.
                             <div>
                               <img
                                 src="assets/image/content/holiday.png"

@@ -66,7 +66,7 @@ export default function Home() {
                     communication templates according to their needs, ensuring
                     flexibility for different healthcare setups. These templates
                     come in three types: <strong>Email</strong>,
-                    <strong>WhatsApp</strong>, and <strong>Poll</strong>.
+                    <strong> WhatsApp</strong>, and <strong>Poll</strong>.
                   </p>
 
                   <ul>
@@ -115,7 +115,7 @@ export default function Home() {
 
                   <ul>
                     <li className="popins-data-helpex">
-                      <strong>View and filter appointment details</strong>
+                      <strong>View and filter appointment details </strong>
                       for quick access to patient and doctor schedules.
                     </li>
                     <li className="popins-data-helpex">
@@ -515,7 +515,8 @@ export default function Home() {
                           <ul className="gx-sub-under">
                             <li>
                               <i className="ri-information-line"></i>
-                              Create your account or log in to access TalkRight.
+                              Create a new account or log in using your existing
+                              credentials to access the TalkRight dashboard.
                             </li>
                           </ul>
                         </li>
@@ -527,24 +528,21 @@ export default function Home() {
                           >
                             <i className="ri-arrow-down-s-line gx-arrow"></i>
                             <i className="ri-file-text-line"></i>
-                            Step 2: Add Departments & Doctors from Doctor
-                            Management System
+                            Step 2: Set Up Clinic Settings
                           </a>
                           <ul className="gx-sub-under">
                             <li>
-                              <i className="ri-information-line"></i>Add all
-                              required departments to organize medical
-                              specialties.
+                              <i className="ri-information-line"></i>Navigate to
+                              <strong> Clinic Management</strong> and configure
+                              your clinic’s basic settings.
                             </li>
                             <li>
-                              <i className="ri-information-line"></i>SAdd
-                              doctors under their respective departments.
-                            </li>
-                            <li>
-                              <i className="ri-information-line"></i>Define each
-                              doctor’s shift timings and leave schedules to
-                              maintain accurate availability and appointment
-                              flow.
+                              <i className="ri-information-line"></i>Define
+                              clinic working hours, regular schedules under
+                              Clinic Timings, holidays under Permanent Day Off,
+                              or any sudden off days under Random Day Off. This
+                              step is essential, as all appointments and doctor
+                              availability depend on clinic timing.
                             </li>
                           </ul>
                         </li>
@@ -556,17 +554,28 @@ export default function Home() {
                           >
                             <i className="ri-arrow-down-s-line gx-arrow"></i>
                             <i className="ri-file-text-line"></i>
-                            Step 3: Set Templates from Template Management
+                            Step 3: Configure Departments & Add Doctors
                           </a>
                           <ul className="gx-sub-under">
                             <li>
-                              <i className="ri-information-line"></i>To create
-                              and manage Email, WhatsApp, and Poll templates for
-                              automated communication, choose the template type:
-                              Email (confirmations), WhatsApp
-                              (reminders/bookings), or Poll (feedback) and then
-                              edit the provided templates according to own
-                              requirements
+                              <i className="ri-information-line"></i>Go to
+                              <strong>
+                                {" "}
+                                Doctor Management → Departments
+                              </strong>{" "}
+                              and add the medical departments available in your
+                              clinic or hospital.
+                            </li>
+                            <li>
+                              <i className="ri-information-line"></i>
+                              Under <strong>Doctor Management → Doctors</strong>
+                              , add doctors and assign them to the relevant
+                              departments.
+                            </li>
+                            <li>
+                              <i className="ri-information-line"></i>
+                              Set their shift timings, availability, and leave
+                              schedules to ensure accurate appointment bookings.
                             </li>
                           </ul>
                         </li>
@@ -578,21 +587,138 @@ export default function Home() {
                           >
                             <i className="ri-arrow-down-s-line gx-arrow"></i>
                             <i className="ri-file-text-line"></i>
-                            Step 4: Book Appointment from Appointments
+                            Step 4: Purchase Subscription
                           </a>
                           <ul className="gx-sub-under">
                             <li>
-                              <i className="ri-information-line"></i>Before
-                              booking the first appointment, you will have to
-                              purchase a Twilio number from Billing.
+                              <i className="ri-information-line"></i>Visit the
+                              Billing section and purchase a subscription to
+                              activate <strong>AI Calling</strong> and{" "}
+                              <strong>WhatsApp Automated Chat</strong>.
                             </li>
                             <li>
-                              <i className="ri-information-line"></i> Select a
-                              date and time, provide the required information
-                              then confirm your booking.
+                              <i className="ri-information-line"></i> This step
+                              is mandatory to enable AI-powered appointment
+                              handling and confirmations.
                             </li>
                           </ul>
                         </li>
+
+                        <li>
+                          <a
+                            href="javascript:void(0)"
+                            className="gx-struct-drop-under d-flex align-items-end"
+                          >
+                            <i className="ri-arrow-down-s-line gx-arrow"></i>
+                            <i className="ri-file-text-line"></i>
+                            Step 5: Configure WhatsApp
+                          </a>
+                          <ul className="gx-sub-under">
+                            <li>
+                              <i className="ri-information-line"></i>Open
+                              <strong>
+                                {" "}
+                                System Settings → WhatsApp Configuration
+                              </strong>{" "}
+                              and connect your clinic’s WhatsApp number.
+                            </li>
+                            <li>
+                              <i className="ri-information-line"></i> This
+                              configuration is mandatory for AI chat, AI booking
+                              confirmations, and automated WhatsApp
+                              interactions.
+                            </li>
+
+                            <li>
+                              <i className="ri-information-line"></i> Without
+                              WhatsApp configuration, even AI call bookings will
+                              not be confirmed.
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li>
+                          <a
+                            href="javascript:void(0)"
+                            className="gx-struct-drop-under d-flex align-items-end"
+                          >
+                            <i className="ri-arrow-down-s-line gx-arrow"></i>
+                            <i className="ri-file-text-line"></i>
+                            Step 6: Configure Email
+                          </a>
+                          <ul className="gx-sub-under">
+                            <li>
+                              <i className="ri-information-line"></i>Navigate to
+                              <strong>
+                                {" "}
+                                System Settings → Email Configuration
+                              </strong>{" "}
+                              and set up your preferred email account.
+                            </li>
+                            <li>
+                              <i className="ri-information-line"></i> All
+                              appointment confirmations, notifications, and
+                              reminder emails will be sent from this configured
+                              email address.
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li>
+                          <a
+                            href="javascript:void(0)"
+                            className="gx-struct-drop-under d-flex align-items-end"
+                          >
+                            <i className="ri-arrow-down-s-line gx-arrow"></i>
+                            <i className="ri-file-text-line"></i>
+                            Step 7: Set Communication Templates
+                          </a>
+                          <ul className="gx-sub-under">
+                            <li>
+                              <i className="ri-information-line"></i>Go to
+                              <strong> Template Management</strong> and
+                              configure Email, WhatsApp, and Poll templates.
+                            </li>
+                            <li>
+                              <i className="ri-information-line"></i> These
+                              templates are used for booking confirmations,
+                              reschedules, cancellations, reminders, and patient
+                              feedback collection.
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li>
+                          <a
+                            href="javascript:void(0)"
+                            className="gx-struct-drop-under d-flex align-items-end"
+                          >
+                            <i className="ri-arrow-down-s-line gx-arrow"></i>
+                            <i className="ri-file-text-line"></i>
+                            Step 9: Book Appointments Manually
+                          </a>
+                          <ul className="gx-sub-under">
+                            <li>
+                              <i className="ri-information-line"></i>Use the
+                              <strong> Calendar</strong> to create and manage
+                              manual appointments based on doctor and clinic
+                              availability.
+                            </li>
+                          </ul>
+                        </li>
+
+                        <p className="mt-2">
+                          <strong>You’re All Set</strong>
+                        </p>
+                        <p className="font-new">
+                          Once these steps are completed, your system is fully
+                          configured.
+                        </p>
+                        <p className="font-new mb-2">
+                          You can now manage appointments, automate patient
+                          communication, and use all TalkRight features smoothly
+                          and efficiently.
+                        </p>
                       </ul>
                     </li>
                   </ul>
@@ -886,7 +1012,7 @@ export default function Home() {
                       Appointments: This section provides a structured view of
                       all patient appointments. Hospital staff can easily
                       monitor and filter appointments by status (confirmed,
-                      canceled, or completed) ensuring smooth management and
+                      canceled, or completed), ensuring smooth management and
                       reduced errors. Records can also be sorted by date, time,
                       doctor’s name, patient’s name, email, or department for
                       quick access and organization.
@@ -917,7 +1043,7 @@ export default function Home() {
                       <strong>Doctor Management: </strong>
                       Doctor Management provides complete details about doctors,
                       their departments, and shift schedules. It allows staff to
-                      add doctors under specific departments and manage their
+                      add doctors to specific departments and manage their
                       availability, including shift timings and leave records,
                       for better coordination and planning.
                     </li>
@@ -934,7 +1060,7 @@ export default function Home() {
                       subscription packages and purchase history including the
                       active package, its duration, and total subscriptions to
                       date. Administrators can easily subscribe to new packages,
-                      or cancel & upgrade the existing ones. For first-time
+                      or cancel & upgrade existing ones. For first-time
                       subscriptions, the system requires selecting an available
                       Twilio number in the respective region. Subsequent
                       renewals only require choosing the desired package.
@@ -960,7 +1086,7 @@ export default function Home() {
                       and reminders through cron jobs (automating reminders,
                       notifications, etc.), configure email settings to send
                       system emails directly from your own address, and
-                      customize the system logo for providing a smooth user
+                      customize the system logo to provide a smooth user
                       experience.
                     </li>
                     <li>
