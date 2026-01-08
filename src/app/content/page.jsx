@@ -4320,7 +4320,7 @@ const page = () => {
                             <strong>Clinic Management</strong>.
                             <div>
                               <img
-                                src="assets/image/content/perm.png"
+                                src="assets/image/content/center-timings.png"
                                 className="mobile-step-img"
                                 style={{ objectFit: "contain" }}
                               />
@@ -4331,7 +4331,7 @@ const page = () => {
                             select an available day.
                             <div>
                               <img
-                                src="assets/image/content/AddHoliday.png"
+                                src="assets/image/content/add-timing.PNG"
                                 className="mobile-step-img"
                                 style={{ objectFit: "contain" }}
                               />
@@ -4343,7 +4343,7 @@ const page = () => {
                             save it.
                             <div>
                               <img
-                                src="assets/image/content/holiday.png"
+                                src="assets/image/content/starting-ending.PNG"
                                 className="mobile-step-img"
                                 style={{ objectFit: "contain" }}
                               />
@@ -4354,7 +4354,7 @@ const page = () => {
                             <strong>Center Timings</strong>.
                             <div>
                               <img
-                                src="assets/image/content/action.png"
+                                src="assets/image/content/center-timings.png"
                                 className="mobile-step-img"
                                 style={{ objectFit: "contain" }}
                               />
@@ -4365,7 +4365,7 @@ const page = () => {
                             update the timing of any available day if required.
                             <div>
                               <img
-                                src="assets/image/content/delAction.png"
+                                src="assets/image/content/timing-edit.PNG"
                                 className="mobile-step-img"
                                 style={{ objectFit: "contain" }}
                               />
@@ -4376,7 +4376,7 @@ const page = () => {
                             timings based on day or time.
                             <div>
                               <img
-                                src="assets/image/content/dayoffSearch.png"
+                                src="assets/image/content/timing-searching.PNG"
                                 className="mobile-step-img"
                                 style={{ objectFit: "contain" }}
                               />
@@ -4388,7 +4388,7 @@ const page = () => {
                             Time, or End Time in ascending or descending order.
                             <div>
                               <img
-                                src="assets/image/content/per-leave-sort.PNG"
+                                src="assets/image/content/timing-sorting.PNG"
                                 className="mobile-step-img"
                                 style={{ objectFit: "contain" }}
                               />
@@ -4400,7 +4400,7 @@ const page = () => {
                             exist.
                             <div>
                               <img
-                                src="assets/image/content/pagination.png"
+                                src="assets/image/content/timing-pagination.PNG"
                                 className="mobile-step-img"
                                 style={{ objectFit: "contain" }}
                               />
@@ -4412,52 +4412,52 @@ const page = () => {
                         <div className="stack ">
                           <div>
                             <img
-                              src="assets/image/content/pagination.png"
+                              src="assets/image/content/timing-pagination.PNG"
                               style={{ objectFit: "contain" }}
                             />
                           </div>
                           <div>
                             <img
-                              src="assets/image/content/AddHoliday.png"
-                              style={{ objectFit: "contain" }}
-                              alt=""
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="assets/image/content/holiday.png"
-                              alt=""
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="assets/image/content/action.png"
-                              style={{ objectFit: "contain" }}
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="assets/image/content/delAction.png"
+                              src="assets/image/content/add-timing.PNG"
                               style={{ objectFit: "contain" }}
                               alt=""
                             />
                           </div>
                           <div>
                             <img
-                              src="assets/image/content/dayoffSearch.png"
+                              src="assets/image/content/starting-ending.PNG"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/center-timings.png"
+                              style={{ objectFit: "contain" }}
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/timing-edit.PNG"
                               style={{ objectFit: "contain" }}
                               alt=""
                             />
                           </div>
                           <div>
                             <img
-                              src="assets/image/content/per-leave-sort.PNG"
+                              src="assets/image/content/timing-searching.PNG"
+                              style={{ objectFit: "contain" }}
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/timing-sorting.PNG"
                               style={{ objectFit: "contain" }}
                             />
                           </div>
                           <div>
                             <img
-                              src="assets/image/content/perm.png"
+                              src="assets/image/content/center-timings.png"
                               style={{ objectFit: "contain" }}
                               alt=""
                             />
