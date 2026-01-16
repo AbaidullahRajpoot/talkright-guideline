@@ -383,118 +383,11 @@ export default function Home() {
                 </div>
               </div>
               <div className="gx-card-content">
-                {/* <div className="file-structure">
-                  <ul className="gx-main-structure">
-                    <li>
-                      <a href="javascript:void(0)" className="gx-struct-drop">
-                        <i className="ri-arrow-down-s-line gx-arrow"></i>
-                        <i className="ri-folder-open-line"></i>
-                        Quick Start Guide
-                      </a>
-
-                      <ul className="gx-sub">
-                        <li>
-                          <a
-                            href="javascript:void(0)"
-                            className="gx-struct-drop-under"
-                          >
-                            <i className="ri-arrow-down-s-line gx-arrow"></i>
-                            <i className="ri-file-text-line"></i>
-                            Step 1: Register or Log In
-                          </a>
-                          <ul className="gx-sub-under">
-                            <li>
-                              <i className="ri-information-line"></i> Create
-                              your account or log in to access TalkRight.
-                            </li>
-                          </ul>
-                        </li>
-
-                        <li>
-                          <a
-                            href="javascript:void(0)"
-                            className="gx-struct-drop-under"
-                          >
-                            <i className="ri-arrow-down-s-line gx-arrow"></i>
-                            <i className="ri-file-text-line"></i>
-                            Step 2: Add Departments & Doctors from Doctor
-                            Management System
-                          </a>
-                          <ul className="gx-sub-under">
-                            <li>
-                              <i className="ri-information-line"></i>Add all
-                              required departments to organize medical
-                              specialties.
-                            </li>
-                            <li>
-                              <i className="ri-information-line"></i>Add doctors
-                              under their respective departments.
-                            </li>
-                            <li>
-                              <i className="ri-information-line"></i>Define each
-                              doctor’s shift timings and leave schedules to
-                              maintain accurate availability and appointment
-                              flow.
-                            </li>
-                          </ul>
-                        </li>
-
-                        <li>
-                          <a
-                            href="javascript:void(0)"
-                            className="gx-struct-drop-under"
-                          >
-                            <i className="ri-arrow-down-s-line gx-arrow"></i>
-                            <i className="ri-file-text-line"></i>
-                            Step3: Set Templates from Template Management
-                          </a>
-                          <ul className="gx-sub-under">
-                            <li>
-                              <i className="ri-information-line"></i>To create
-                              and manage Email, WhatsApp, and Poll templates for
-                              automated communication, choose the template type:
-                              Email (confirmations), WhatsApp
-                              (reminders/bookings), or Poll (feedback) and then
-                              edit the provided templates according to own
-                              requirements
-                            </li>
-                          </ul>
-                        </li>
-
-                        <li>
-                          <a
-                            href="javascript:void(0)"
-                            className="gx-struct-drop-under"
-                          >
-                            <i className="ri-arrow-down-s-line gx-arrow"></i>
-                            <i className="ri-file-text-line"></i>
-                            Step4: Book Appointment from Appointments
-                          </a>
-                          <ul className="gx-sub-under">
-                            <li>
-                              <i className="ri-information-line"></i> Before
-                              booking the first appointment, you will have to
-                              purchase a Twilio number from Billing.
-                            </li>
-                            <li>
-                              <i className="ri-information-line"></i> Select a
-                              date and time, provide the required information
-                              then confirm your booking.
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div> */}
-
-                {/* ---------------- */}
-
                 <div className="file-structure">
                   <ul className="gx-main-structure">
                     <li>
                       <a
-                        href="javascript:void(0)"
+                        href="#"
                         className="gx-struct-drop d-flex align-items-end"
                       >
                         <i className="ri-arrow-down-s-line gx-arrow"></i>
@@ -505,7 +398,7 @@ export default function Home() {
                       <ul className="gx-sub">
                         <li>
                           <a
-                            href="javascript:void(0)"
+                            href="#"
                             className="gx-struct-drop-under d-flex align-items-end"
                           >
                             <i className="ri-arrow-down-s-line gx-arrow"></i>
@@ -523,7 +416,7 @@ export default function Home() {
 
                         <li>
                           <a
-                            href="javascript:void(0)"
+                            href="#"
                             className="gx-struct-drop-under d-flex align-items-end"
                           >
                             <i className="ri-arrow-down-s-line gx-arrow"></i>
@@ -549,7 +442,7 @@ export default function Home() {
 
                         <li>
                           <a
-                            href="javascript:void(0)"
+                            href="#"
                             className="gx-struct-drop-under d-flex align-items-end"
                           >
                             <i className="ri-arrow-down-s-line gx-arrow"></i>
@@ -582,7 +475,7 @@ export default function Home() {
 
                         <li>
                           <a
-                            href="javascript:void(0)"
+                            href="#"
                             className="gx-struct-drop-under d-flex align-items-end"
                           >
                             <i className="ri-arrow-down-s-line gx-arrow"></i>
@@ -606,7 +499,7 @@ export default function Home() {
 
                         <li>
                           <a
-                            href="javascript:void(0)"
+                            href="#"
                             className="gx-struct-drop-under d-flex align-items-end"
                           >
                             <i className="ri-arrow-down-s-line gx-arrow"></i>
@@ -639,7 +532,7 @@ export default function Home() {
 
                         <li>
                           <a
-                            href="javascript:void(0)"
+                            href="#"
                             className="gx-struct-drop-under d-flex align-items-end"
                           >
                             <i className="ri-arrow-down-s-line gx-arrow"></i>
@@ -666,7 +559,7 @@ export default function Home() {
 
                         <li>
                           <a
-                            href="javascript:void(0)"
+                            href="#"
                             className="gx-struct-drop-under d-flex align-items-end"
                           >
                             <i className="ri-arrow-down-s-line gx-arrow"></i>
@@ -690,7 +583,7 @@ export default function Home() {
 
                         <li>
                           <a
-                            href="javascript:void(0)"
+                            href="#"
                             className="gx-struct-drop-under d-flex align-items-end"
                           >
                             <i className="ri-arrow-down-s-line gx-arrow"></i>
@@ -730,7 +623,7 @@ export default function Home() {
                   <ul className="gx-main-structure">
                     <li>
                       <a
-                        href="javascript:void(0)"
+                        href="#"
                         className="gx-struct-drop d-flex align-items-end"
                       >
                         <i className="ri-arrow-down-s-line gx-arrow"></i>
@@ -746,7 +639,7 @@ export default function Home() {
                       <ul className="gx-sub">
                         <li>
                           <a
-                            href="javascript:void(0)"
+                            href="#"
                             className="gx-struct-drop-under d-flex align-items-end"
                           >
                             <i className="ri-arrow-down-s-line gx-arrow"></i>
@@ -794,7 +687,7 @@ export default function Home() {
 
                         <li>
                           <a
-                            href="javascript:void(0)"
+                            href="#"
                             className="gx-struct-drop-under d-flex align-items-end"
                           >
                             <i className="ri-arrow-down-s-line gx-arrow"></i>
@@ -839,7 +732,7 @@ export default function Home() {
 
                         <li>
                           <a
-                            href="javascript:void(0)"
+                            href="#"
                             className="gx-struct-drop-under d-flex align-items-end"
                           >
                             <i className="ri-arrow-down-s-line gx-arrow"></i>
@@ -1000,30 +893,51 @@ export default function Home() {
                     </li>
                     <li>
                       <strong>Calendar: </strong>
-                      The Calendar allows hospital staff to manually book
-                      appointments based on patient needs. It offers flexibility
-                      to select doctors and departments according to their shift
-                      timings, making scheduling simple and efficient. Staff can
-                      also view patient appointment details and modify, reset,
-                      or delete bookings whenever required.
+                      The Calendar allows hospital staff to manually create
+                      appointments as needed, providing complete flexibility in
+                      scheduling. Staff can view all reserved appointments or
+                      view filtered appointments of a specific doctor. Booking
+                      details can be edited at any time, and appointments can be
+                      moved from one date to another within the same time slot.
+                      The system does not restrict appointment reservation
+                      through calendar, based on doctor or hospital timings,
+                      allowing appointments to be created or adjusted easily
+                      during emergency situations without any scheduling
+                      limitations.
                     </li>
                     <li>
                       <strong>Appointments: </strong>
-                      Appointments: This section provides a structured view of
-                      all patient appointments. Hospital staff can easily
-                      monitor and filter appointments by status (confirmed,
-                      canceled, or completed), ensuring smooth management and
-                      reduced errors. Records can also be sorted by date, time,
-                      doctor’s name, patient’s name, email, or department for
-                      quick access and organization.
+                      This section provides a structured and organized view of
+                      all patient appointments through separate tabs for{" "}
+                      <strong>All, Confirmed, Completed,</strong> and{" "}
+                      <strong>Cancelled </strong>
+                      appointments. Hospital staff can easily monitor and manage
+                      appointments based on their status, ensuring smooth
+                      operations and reduced errors. Appointments can also be
+                      filtered and sorted by date, time, doctor’s name,
+                      patient’s name, email, or department for quick access and
+                      efficient organization.
                     </li>
+                    <li>
+                      <strong>Patient: </strong>
+                      The Patients section shows a unified list of patients
+                      grouped by phone number with their appointment history.
+                      Clicking a patient’s number opens all related bookings,
+                      and the <strong>Patient Consent</strong> view indicates
+                      whether the patient has agreed to data storage and usage.
+                    </li>
+
                     <li>
                       <strong>Incoming Calls: </strong>
                       This section maintains a detailed log of all incoming
-                      calls. It records who made the call, which staff member or
-                      agent received it, and all relevant contact information,
-                      ensuring that call history is complete, transparent, and
-                      easily accessible.
+                      calls. It records caller information, including name,
+                      email, and contact number, along with complete call
+                      details such as date, time, and call duration. When an
+                      appointment is created during a call, the reserved
+                      doctor’s name is also recorded instead of the center
+                      number. This ensures call history remains complete,
+                      transparent, and easily accessible for review and
+                      follow-up.
                     </li>
                     <li>
                       <strong>Reviews: </strong>
@@ -1033,11 +947,16 @@ export default function Home() {
                       for improvement in service quality and communication.
                     </li>
                     <li>
-                      <strong>Report: </strong>
-                      This section contains all generated reports, showing who
-                      created them and their details. It keeps records
-                      well-organized and readily available, enabling quick
-                      review and effective tracking of operational activities.
+                      <strong>Reports: </strong>
+                      The Reports section provides a structured view of all
+                      appointment-related reports in a single interface. It
+                      allows staff to review detailed appointment records,
+                      including patient information, doctor, department, date
+                      and time, and appointment status. Reports can be filtered
+                      by date range, department, and doctor, and can be searched
+                      or exported for further analysis. This ensures organized
+                      record-keeping, quick review, and effective tracking of
+                      operational activity.
                     </li>
                     <li>
                       <strong>Doctor Management: </strong>
@@ -1068,14 +987,12 @@ export default function Home() {
                     <li>
                       <strong>Template Management: </strong>
                       Template Management enables hospital staff to manage and
-                      edit
-                      <strong> Email</strong>, <strong>WhatsApp</strong>, and{" "}
-                      <strong>Poll </strong>
-                      templates for patient communication. Predefined WhatsApp
-                      and Poll templates are provided for convenience and can be
-                      customized to match hospital requirements, ensuring
-                      professional and personalized messaging for confirmations,
-                      reminders, and feedback.
+                      edit Email, WhatsApp, and Poll templates for patient
+                      communication. Predefined WhatsApp and Poll templates are
+                      provided for convenience and can be customized to match
+                      hospital requirements, ensuring professional and
+                      personalized messaging for confirmations, reminders, and
+                      feedback.
                     </li>
                     <li>
                       <strong>System Settings: </strong>

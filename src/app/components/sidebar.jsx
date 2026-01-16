@@ -119,6 +119,12 @@ const Sidebar = () => {
                       </Link>
                     </li>
                     <li>
+                      <Link href="/content#patient" className="drop-down">
+                        <i className="ri-record-circle-line"></i>
+                        <p>Patients</p>
+                      </Link>
+                    </li>
+                    <li>
                       <Link href="/content#IncomingCalls" className="drop-down">
                         <i className="ri-record-circle-line"></i>
                         <p>Incoming Calls</p>

@@ -1105,7 +1105,7 @@ const page = () => {
                       </li>
                       <li>
                         <strong>Appointment Timing:</strong> Displays both the{" "}
-                        <strong>booking date & time</strong>
+                        <strong>booking date & time </strong>
                         and the{" "}
                         <strong>scheduled appointment date & time</strong>.
                       </li>
@@ -1419,6 +1419,410 @@ const page = () => {
             </div>
           </div>
         </div>
+        {/* --------------------------------------PATIENTS--------------------------------- */}
+        <div className="gx-block" id="patient">
+          <div className="gx-card gx-page-block">
+            <div className="gx-card-header">
+              <p className="second-main-title">Patients</p>
+              <div className="header-tools">
+                <a href="#" className="gx-full-card">
+                  <i className="ri-fullscreen-fill"></i>
+                </a>
+              </div>
+            </div>
+            <div className="gx-card-content">
+              <div className="intero">
+                <h1>Patients</h1>
+                <p className="popins-data-helpex">
+                  The Patients section allows administrators to manage and
+                  review patient-related information through two dedicated tabs:
+                  <strong>Patient History</strong> and{" "}
+                  <strong>Patient Consent</strong>. Patient History provides a
+                  consolidated view of patients grouped by phone number, along
+                  with their contact details and complete appointment records.
+                  The Patient Consent tab displays whether patients have granted
+                  permission to store and use their data. This section ensures
+                  organized record-keeping, transparency, and compliance with
+                  data protection requirements.
+                </p>
+
+                <ul className="nav nav-tabs mt-5" id="myTab44" role="tablist">
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link active"
+                      id="preview66-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#preview66"
+                      type="button"
+                      role="tab"
+                      aria-controls="preview66"
+                      aria-selected="true"
+                    >
+                      <i className="ri-eye-line"></i> Preview
+                    </button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link"
+                      id="code-tab99"
+                      data-bs-toggle="tab"
+                      data-bs-target="#code99"
+                      type="button"
+                      role="tab"
+                      aria-controls="code99"
+                      aria-selected="false"
+                    >
+                      <span className="material-symbols-outlined">build</span>{" "}
+                      Usage
+                    </button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link"
+                      id="code-tab100"
+                      data-bs-toggle="tab"
+                      data-bs-target="#code100"
+                      type="button"
+                      role="tab"
+                      aria-controls="code100"
+                      aria-selected="false"
+                    >
+                      <span className="material-symbols-outlined">
+                        menu_book
+                      </span>{" "}
+                      How to Use
+                    </button>
+                  </li>
+                </ul>
+
+                <div className="tab-content second-content" id="myTabContent">
+                  <div
+                    className="tab-pane fade show active"
+                    id="preview66"
+                    role="tabpanel"
+                    aria-labelledby="preview66-tab"
+                  >
+                    <img
+                      src="./assets/image/content/patient-record.png"
+                      alt="patient preview not found"
+                    />
+                  </div>
+
+                  <div
+                    className="tab-pane fade"
+                    id="code99"
+                    role="tabpanel"
+                    aria-labelledby="code99-tab"
+                  >
+                    <p>
+                      <strong>What it is:</strong>
+                    </p>
+                    <p className="">
+                      The <strong>Patient History</strong> tab provides the view
+                      of all patients and their appointments, grouped by phone
+                      number. It helps administrators quickly review patient
+                      details, appointment trends, and booking history in one
+                      place.
+                    </p>
+
+                    <p>
+                      <strong>Description:</strong>
+                    </p>
+                    <ul className="lists">
+                      <li>
+                        Displays patients grouped by phone number with their
+                        contact details, including name and email.
+                      </li>
+                      <li>
+                        Shows appointment statistics such as total appointments,
+                        confirmed, completed, and cancelled bookings.
+                      </li>
+                      <li>
+                        Displays the first and last appointment dates for each
+                        patient.
+                      </li>
+                      <li>
+                        Clicking on a patient’s phone number opens a detailed
+                        view of all related appointments.
+                      </li>
+                      <li>
+                        Supports searching patients by phone number, name, or
+                        email for quick access.
+                      </li>
+                      <li>
+                        Enables sorting by phone number, patient name, email, &
+                        total appointments.
+                      </li>
+                      <li>
+                        Provides a clear, structured list for easy review and
+                        tracking.
+                      </li>
+                      <li>
+                        Pagination appears automatically when multiple patient
+                        records are available.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div
+                    className="tab-pane fade how-to-use"
+                    id="code100"
+                    role="tabpanel"
+                    aria-labelledby="code100-tab"
+                  >
+                    <div className="d-md-flex justify-content-md-between col-md-10 col-11  ">
+                      <div className="col-12 col-md-11 col-lg-7  ">
+                        <p>
+                          <strong>How to Use:</strong>
+                        </p>
+
+                        <ul className="lists steps">
+                          <li data-target="10" className="cursor-pointer">
+                            <strong>Open Incoming Calls:</strong> When you open
+                            this section, it displays calls within the system’s
+                            default date range (e.g., 09/12/2025 – 09/13/2025).
+                            <div>
+                              <img
+                                src="assets/image/content/incomingcall.png"
+                                className="mobile-step-img"
+                                style={{ objectFit: "contain" }}
+                                alt=""
+                              />
+                            </div>
+                          </li>
+
+                          <li data-target="2" className="cursor-pointer">
+                            <strong>Set a Date Range:</strong> Click the
+                            <strong>Date Range</strong> control at the top-right
+                            to select your desired start and end dates. The
+                            table will automatically update to show only the
+                            calls made within that range.
+                            <div>
+                              <img
+                                src="assets/image/content/dateRange.png"
+                                className="mobile-step-img"
+                                style={{ objectFit: "contain" }}
+                                alt=""
+                              />
+                            </div>
+                          </li>
+
+                          <li data-target="3" className="cursor-pointer">
+                            <strong>Search Calls:</strong> Use the
+                            <strong>Search Calls</strong> bar to quickly find a
+                            caller by name, phone number, or email. Results
+                            appear instantly and support partial matches for
+                            faster lookup.
+                            <div>
+                              <img
+                                src="assets/image/content/CallSearch.png"
+                                className="mobile-step-img"
+                                style={{ objectFit: "contain" }}
+                                alt=""
+                              />
+                            </div>
+                          </li>
+
+                          <li data-target="4" className="cursor-pointer">
+                            <strong>Adjust Page Length:</strong> Use the
+                            <strong>Rows per Page</strong> dropdown (options:
+                            10, 25, 50, 100) to control how many call records
+                            are displayed on a single page.
+                            <div>
+                              <img
+                                src="assets/image/content/docdrop.png"
+                                className="mobile-step-img"
+                                style={{ objectFit: "contain" }}
+                                alt=""
+                              />
+                            </div>
+                          </li>
+
+                          <li data-target="5" className="cursor-pointer">
+                            <strong>Sort Columns:</strong> Click on any column
+                            header (such as <strong>Date</strong> or{" "}
+                            <strong>Duration</strong> ) to sort the data in
+                            ascending or descending order. An arrow icon will
+                            indicate the current sort direction.
+                            <div>
+                              <img
+                                src="assets/image/content/CallSid.png"
+                                className="mobile-step-img"
+                                style={{ objectFit: "contain" }}
+                                alt=""
+                              />
+                            </div>
+                          </li>
+
+                          <li data-target="6" className="cursor-pointer">
+                            <strong>Play or Download Call Recordings:</strong>
+                            In the <strong>Full Call</strong> column:
+                            <div>
+                              <img
+                                src="assets/image/content/fullcall.png"
+                                className="mobile-step-img"
+                                style={{ objectFit: "contain" }}
+                                alt=""
+                              />
+                            </div>
+                            <ul className="lists">
+                              <li className="cursor-pointer">
+                                Click the <strong>Play</strong> button to listen
+                                to a call recording directly.
+                              </li>
+
+                              <li className="cursor-pointer">
+                                Click the <strong>Download</strong> icon to save
+                                the recording for later use.
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li>
+                            <strong>Contact the Caller:</strong> In the{" "}
+                            <strong>Contact</strong> column, you can reach out
+                            to the caller using:
+                            <ul className="lists">
+                              <li data-target="7" className="cursor-pointer">
+                                <strong>Email Icon:</strong> Opens your default
+                                email client to send an email.
+                                <div>
+                                  <img
+                                    src="assets/image/content/Gmail.png"
+                                    className="mobile-step-img"
+                                    style={{ objectFit: "contain" }}
+                                    alt=""
+                                  />
+                                </div>
+                              </li>
+                              <li data-target="8" className="cursor-pointer">
+                                <strong>WhatsApp Icon:</strong> Starts a
+                                WhatsApp chat with the caller.
+                                <div>
+                                  <img
+                                    src="assets/image/content/Whatsapp.png"
+                                    className="mobile-step-img"
+                                    style={{ objectFit: "contain" }}
+                                    alt=""
+                                  />
+                                </div>
+                              </li>
+                              <li data-target="9" className="cursor-pointer">
+                                <strong>Message Icon:</strong> Prompts a pop-up
+                                to choose a messaging app from your system.
+                                <div>
+                                  <img
+                                    src="assets/image/content/message.png"
+                                    className="mobile-step-img"
+                                    style={{ objectFit: "contain" }}
+                                    alt=""
+                                  />
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li data-target="1" className="cursor-pointer">
+                            <strong>Navigate Pages:</strong> Use the
+                            <strong>pagination controls</strong> (First,
+                            Previous, Next, Last) at the bottom-right to move
+                            through pages. The summary at the bottom-left (e.g.,
+                            “Showing 1 to 10 of 30 entries”) updates
+                            automatically based on filters and page selection.
+                            <div>
+                              <img
+                                src="assets/image/content/pagination.png"
+                                className="mobile-step-img"
+                                style={{ objectFit: "contain" }}
+                                alt=""
+                              />
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div className="col-4">
+                        <div className="stack">
+                          <div>
+                            <img
+                              src="assets/image/content/pagination.png"
+                              style={{ objectFit: "contain" }}
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/dateRange.png"
+                              style={{ objectFit: "contain" }}
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/CallSearch.png"
+                              style={{ objectFit: "contain" }}
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/docdrop.png"
+                              style={{ objectFit: "contain" }}
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/CallSid.png"
+                              style={{ objectFit: "contain" }}
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/fullcall.png"
+                              style={{ objectFit: "contain" }}
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/Gmail.png"
+                              style={{ objectFit: "contain" }}
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/Whatsapp.png"
+                              style={{ objectFit: "contain" }}
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/message.png"
+                              style={{ objectFit: "contain" }}
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="assets/image/content/incomingcall.png"
+                              style={{ objectFit: "contain" }}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* ----------------------------------------------- */}
         <div className="gx-block" id="IncomingCalls">
           <div className="gx-card gx-page-block">
             <div className="gx-card-header">
@@ -6644,13 +7048,13 @@ const page = () => {
 
                     <h2 className="mt-5">Email Configuration</h2>
                     <ul
-                      class="nav nav-tabs mt-3"
+                      className="nav nav-tabs mt-3"
                       id="email-config-tab"
                       role="tablist"
                     >
-                      <li class="nav-item" role="presentation">
+                      <li className="nav-item" role="presentation">
                         <button
-                          class="nav-link active"
+                          className="nav-link active"
                           id="email-config-preview-tab"
                           data-bs-toggle="tab"
                           data-bs-target="#email-config-preview"
@@ -6659,12 +7063,12 @@ const page = () => {
                           aria-controls="email-config-preview"
                           aria-selected="true"
                         >
-                          <i class="ri-eye-line"></i> Preview
+                          <i className="ri-eye-line"></i> Preview
                         </button>
                       </li>
-                      <li class="nav-item" role="presentation">
+                      <li className="nav-item" role="presentation">
                         <button
-                          class="nav-link"
+                          className="nav-link"
                           id="email-config-usage-tab"
                           data-bs-toggle="tab"
                           data-bs-target="#email-config-usage"
@@ -6673,13 +7077,15 @@ const page = () => {
                           aria-controls="email-config-usage"
                           aria-selected="false"
                         >
-                          <span class="material-symbols-outlined">build</span>{" "}
+                          <span className="material-symbols-outlined">
+                            build
+                          </span>{" "}
                           Usage
                         </button>
                       </li>
-                      <li class="nav-item" role="presentation">
+                      <li className="nav-item" role="presentation">
                         <button
-                          class="nav-link"
+                          className="nav-link"
                           id="email-config-howto-tab"
                           data-bs-toggle="tab"
                           data-bs-target="#email-config-howto"
@@ -6688,7 +7094,7 @@ const page = () => {
                           aria-controls="email-config-howto"
                           aria-selected="false"
                         >
-                          <span class="material-symbols-outlined">
+                          <span className="material-symbols-outlined">
                             menu_book
                           </span>{" "}
                           How to Use
@@ -6696,11 +7102,11 @@ const page = () => {
                       </li>
                     </ul>
                     <div
-                      class="tab-content second-content"
+                      className="tab-content second-content"
                       id="emailConfigContent"
                     >
                       <div
-                        class="tab-pane fade show active"
+                        className="tab-pane fade show active"
                         id="email-config-preview"
                         role="tabpanel"
                         aria-labelledby="email-config-preview-tab"
@@ -6712,7 +7118,7 @@ const page = () => {
                       </div>
                       {/*✅ 6. Logo Settings Section */}
                       <div
-                        class="tab-pane fade"
+                        className="tab-pane fade"
                         id="email-config-usage"
                         role="tabpanel"
                         aria-labelledby="email-config-usage-tab"
@@ -6770,7 +7176,7 @@ const page = () => {
                         </ul>
                       </div>
                       <div
-                        class="tab-pane fade how-to-use"
+                        className="tab-pane fade how-to-use"
                         id="email-config-howto"
                         role="tabpanel"
                         aria-labelledby="email-config-howto-tab"
