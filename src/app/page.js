@@ -363,7 +363,7 @@ export default function Home() {
                         <p className="feature-name">
                           <strong>Report</strong>
                         </p>
-                        <p className="feature-text">Report Center</p>
+                        <p className="feature-text">Report Centre</p>
                       </div>
                     </div>
                   </div>
@@ -395,7 +395,7 @@ export default function Home() {
                         Quick Start Guide
                       </a>
 
-                      <ul className="gx-sub">
+                      <ul className="gx-sub show">
                         <li>
                           <a
                             href="#"
@@ -636,7 +636,7 @@ export default function Home() {
                         How To Register
                       </a>
 
-                      <ul className="gx-sub">
+                      <ul className="gx-sub show">
                         <li>
                           <a
                             href="#"
@@ -934,7 +934,7 @@ export default function Home() {
                       email, and contact number, along with complete call
                       details such as date, time, and call duration. When an
                       appointment is created during a call, the reserved
-                      doctor’s name is also recorded instead of the center
+                      doctor’s name is also recorded instead of the centre
                       number. This ensures call history remains complete,
                       transparent, and easily accessible for review and
                       follow-up.
@@ -969,9 +969,10 @@ export default function Home() {
                     <li>
                       <strong>Clinic Management: </strong>
                       This section manages the clinic’s operational schedule,
-                      including fixed weekly off-days and occasional leaves. It
-                      helps staff stay informed about clinic availability and
-                      ensures accurate appointment scheduling.
+                      including centre availability, fixed weekly off-days and
+                      occasional leaves. It helps staff stay informed about
+                      clinic availability and ensures accurate appointment
+                      scheduling.
                     </li>
                     <li>
                       <strong>Billing: </strong>
