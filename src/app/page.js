@@ -588,7 +588,7 @@ export default function Home() {
                           >
                             <i className="ri-arrow-down-s-line gx-arrow"></i>
                             <i className="ri-file-text-line"></i>
-                            Step 9: Book Appointments Manually
+                            Step 8: Book Appointments Manually
                           </a>
                           <ul className="gx-sub-under">
                             <li>
